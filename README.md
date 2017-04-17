@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# FirstTest
-Just for testing
-=======
 # Projeto Um Robô por Aluno
 ## Sobre
 
