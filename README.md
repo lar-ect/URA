@@ -46,6 +46,13 @@ https://github.com/orivaldosantana/GPRo/tree/master/arduino
 * Lições sobre Arduíno por Paul McWhorter: http://www.toptechboy.com/arduino-lessons/
 * Usando motor DC com Arduíno e CI L293D, http://www.arduinoecia.com.br/2014/04/controle-de-motor-cc-com-o-l293d-ponte-h.html 
 
+### Livros Recomendados
+* Arduino básico - Michael McRoberts, 1º edição 
+* Arduino CAP1 e CAP2 -  João Alexandre da Silveira 
+* C++ Básico - Luis Antonio, Apostilando.com 
+* Apostila de DEV C++ 
+* C completo e total - Herbert Schildt, 3º edição Revista e Atualizada
+
 ## Informes
 
 * As oficinas ocorrerão TODA segunda , no horario das 14:35 as 16:35 no laboratório 02, no segundo andar do prédio da Escola de Ciencia e técnologia (ECT)  na UFRN.
