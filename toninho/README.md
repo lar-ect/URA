@@ -22,23 +22,23 @@
 [Placa eletrônica desenvolvida para este projeto](https://github.com/mpsdantas/EducaIno)
 
 ## Peças Impressas 
-* [Disco para contagem de giros](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/contadorDeGiros/tachoDiscSmall.stl) 
+* [Disco para contagem de giros](Pecas_3D_STLs/contadorDeGiros/tachoDiscSmall.stl) 
 
     `fonte`: [thingiverse](http://www.thingiverse.com/thing:1460059)
 
 
-* [Suporte para motor DC (direito) ](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/suporteMotorDireito/motorMountMirrored.stl) 
+* [Suporte para motor DC (direito) ](Pecas_3D_STLs/suporteMotorDireito/motorMountMirrored.stl) 
 
-* [Suporte para motor DC (esquerdo) ](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/suporteMotorEsquerdo/motorMount.stl)
+* [Suporte para motor DC (esquerdo) ](Pecas_3D_STLs/suporteMotorEsquerdo/motorMount.stl)
 
    `fonte`: [thingiverse](http://www.thingiverse.com/thing:1473508)
 
 * Peças para estrutura de suporte das bateria e da placa   
     - hastes:  
-       --> [**100mm**](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/hastes/haste_100mm/hastes_inferiores_superiores.stl)  
-       --> [**80mm**](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/hastes/haste_80mm/haste_lateral_horizontais.stl)  
+       --> [**100mm**](Pecas_3D_STLs/hastes/haste_100mm/hastes_inferiores_superiores.stl)  
+       --> [**80mm**](Pecas_3D_STLs/hastes/haste_80mm/haste_lateral_horizontais.stl)  
     - encaixes  
-        --> [**24x24**](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/Encaixe/encaixe_24_24.stl)
+        --> [**24x24**](Pecas_3D_STLs/Encaixe/encaixe_24_24.stl)
               
     `fonte`: [orivaldo](https://github.com/orivaldosantana/EstruturaURA/tree/master/stls/robo_rodas_maior) 
 
