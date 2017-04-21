@@ -21,7 +21,7 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 
 ### Versão 3.0
 
-[Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/versao_3)
+[Acesse aqui.](versao_3)
  
 ### Sugestão de Cronograma de Atividades
 * 03/04/2017 - Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais 
