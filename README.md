@@ -13,11 +13,11 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 ## Versões do URA
 ### Versão 1.0 - Papelão Azul
 
-[Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/Vers%C3%A3o%201.0)
+[Acesse aqui.](Vers%C3%A3o%201.0)
 
 ### Versão 2.0 - Toninho
 
-[Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/toninho)
+[Acesse aqui.](toninho)
 
 ### Versão 3.0
 
@@ -56,4 +56,4 @@ https://github.com/orivaldosantana/GPRo/tree/master/arduino
 ## Informes
 
 * As oficinas ocorrerão TODA segunda , no horario das 14:35 as 16:35 no laboratório 02, no segundo andar do prédio da Escola de Ciencia e técnologia (ECT)  na UFRN.
->>>>>>> a97cc99fb4f25351422b4bbd5359e50c1bc5d3e0
+
