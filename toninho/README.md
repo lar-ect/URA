@@ -45,6 +45,9 @@
 ## Fotos 
 * Álbum no Google Fotos, https://goo.gl/photos/yvuef9zv1RtGaRwc9
 
+## Tutorial de Montagem 
+* [Acesse aqui.](TutorialMontagemToninho.md)
+
 ## Referêcias e Links 
 * Ponte H L293D, http://learning.grobotronics.com/2013/07/l293d-motor-driver/  
 * Ponte H L298, http://blog.filipeflop.com/motores-e-servos/motor-dc-arduino-ponte-h-l298n.html
