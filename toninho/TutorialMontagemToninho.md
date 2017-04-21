@@ -18,7 +18,7 @@ vamos la!
 primeiro passo para ter um toninho para chamar de seu é imprimir as peças:  
 
  impirima `4 encaixes: `  
-![encaixe](https://raw.githubusercontent.com/orivaldosantana/ProjetoURA/master/toninho/Fotos/encaixeFoto.png)  
+![encaixe](Fotos/encaixeFoto.png)  
 
 [link para download](https://drive.google.com/open?id=0B1uMptwQ0YA9NEg5VWc4U3E1MXM)
 
