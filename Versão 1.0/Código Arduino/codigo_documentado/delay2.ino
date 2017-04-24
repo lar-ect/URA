@@ -1,3 +1,5 @@
+
+
 void delay2(int tempo) {
   for (int i = 0; i < tempo; i++) {
     if (Serial.available()) {

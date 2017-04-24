@@ -20,9 +20,9 @@
 
 #define LINHA2 4       //Sensor de linha conectado ao pino digital 4
 
-Servo motor1, motor2;   //Cria dois objetos da classe Servo para o controle dos Servo motores 
+Servo motor1, motor2;   //Cria dois objetos da classe Servo para o controle dos Servo motores
 
-int tempo = 0, te = 0, td = 0, t; 
+int tempo = 0, te = 0, td = 0, t;
 
 int melodia[] = {660, 660, 660, 510, 660, 770, 380, 510, 380, 320, 440, 480, 450, 430, 380, 660, 760, 860, 700, 760, 660, 520, 580, 480, 510, 380, 320, 440, 480, 450, 430, 380, 660, 760, 860, 700, 760, 660, 520, 580, 480, 500, 760, 720, 680, 620, 650, 380, 430, 500, 430, 500, 570, 500, 760, 720, 680, 620, 650, 1020, 1020, 1020, 380, 500, 760, 720, 680, 620, 650, 380, 430, 500, 430, 500, 570, 585, 550, 500, 380, 500, 500, 500, 500, 760, 720, 680, 620, 650, 380, 430, 500, 430, 500, 570, 500, 760, 720, 680, 620, 650, 1020, 1020, 1020, 380, 500, 760, 720, 680, 620, 650, 380, 430, 500, 430, 500, 570, 585, 550, 500, 380, 500, 500, 500, 500, 500, 500, 500, 580, 660, 500, 430, 380, 500, 500, 500, 500, 580, 660, 870, 760, 500, 500, 500, 500, 580, 660, 500, 430, 380, 660, 660, 660, 510, 660, 770, 380};
 //Frequência de cada nota em hertz
@@ -37,27 +37,31 @@ char v[TAM];    //Cria um vetor v de 30 posições
 char n[TAM];    //Cria um vetor n de 30 posições
 
 char option , comando;    //Variáveis para armazenar os comandos enviados pela Serial
-int flag = 0;             
+int flag = 0;
 
 void setup() {
-  
-  Serial.begin(9600);
-  pinMode(TRIG, OUTPUT);    //Define pino 8 como saída 
-  pinMode(ECHO, INPUT);     //Define pino 9 como saída
-  pinMode(BOTAO,INPUT);     //Define pino 7 como saída
-  pinMode(BIP, OUTPUT);     //Define pino 6 como saída
-  pinMode(3, INPUT);        
-  digitalWrite(BOTAO, HIGH);
-  for (int i = 0; i < TAM; i++) {
-    v[i] = 'p'; n[i] = 'p';
+
+  Serial.begin(9600);           //Inicia a Serial
+  pinMode(TRIG, OUTPUT);        //Define pino 8 como saída
+  pinMode(ECHO, INPUT);         //Define pino 9 como entrada
+  pinMode(BOTAO, INPUT);        //Define pino 7 como entrada
+  pinMode(BIP, OUTPUT);         //Define pino 6 como saída
+  pinMode(3, INPUT);            //Define pino 3 como entrada
+  digitalWrite(BOTAO, HIGH);    //Escreve no pino 7 o valor alto
+
+  for (int i = 0; i < TAM; i++) {     //Preenche todas as posições dos vetores v e n com o caracter p
+    v[i] = 'p';
+    n[i] = 'p';
   }
-  while (!Serial.available());
+  while (!Serial.available());        //Arguarda a serial ser aberta
+
   Serial.println("Escolha uma das opcoes: a= automatica, m= manual, c= manual continua. Para trocar de opcao basta escolher 's'");
 }
 
 void loop() {
 
-  option = 'p'; comando = 'p';
+  option = 'p';
+  comando = 'p';
 
   if (Serial.available()) {
     option = Serial.read();
@@ -169,7 +173,7 @@ void loop() {
 
   motor1.detach();
   motor2.detach();
-  
+
   if (option == 'a') {
     //Indicação de entrada
     flag = 0;
@@ -334,15 +338,17 @@ void loop() {
   }
 
   if (option == 'k') {           //Caso o usuário tenha digitado a letra k
-    
-    digitalWrite(6, HIGH);    
+
+    digitalWrite(6, HIGH);        //Emite um sinal sonoro
     delay(500);
     digitalWrite(6, LOW);
     delay(500);
-    Serial.println("Voce escolheu a opcao Manual Continua: f= para frente, t= tras, d= direita, e= esquerda, p= parar. ");
-    int seg1, seg2;
     
-    while (comando != 's') {      //Permanece no laço até que o usuário digite a letra s
+    Serial.println("Voce escolheu a opcao Manual Continua: f= para frente, t= tras, d= direita, e= esquerda, p= parar. ");
+    
+    int seg1, seg2;     //Variáveis para amrmazenar as leituras dos sensores de linha
+
+    while (comando != 's') {          //Permanece no laço até que o usuário digite a letra s
       if (Serial.available()) {
         comando = Serial.read();
         Serial.println(comando);
@@ -364,7 +370,8 @@ void loop() {
         delay(1000);
         motor1.attach(SERVO1);
         motor2.attach(SERVO4);
-        while (seg2 == 1) {
+        
+        while (seg2 == 1) {             //Permanece no laço até que o robô saia da linha
           seg2 = digitalRead(LINHA2);
           motor1.write(70);
           motor2.write(70);
@@ -375,13 +382,15 @@ void loop() {
         motor1.attach(SERVO1);
         motor2.attach(SERVO4);
       }
+      
       if (seg1 == 1) {            // Se o sensor conectado ao pino 4 detectou uma linha
         motor1.detach();
         motor2.detach();
         delay(1000);
         motor1.attach(SERVO1);
         motor2.attach(SERVO4);
-        while (seg1 == 1) {
+        
+        while (seg1 == 1) {              //Permanece no laço até que o robô saia da linha
           seg1 = digitalRead(LINHA1);
           motor1.write(110);
           motor2.write(110);
@@ -397,8 +406,9 @@ void loop() {
     Serial.println("Trocar opcao");
   }
 
-  if (option == 'r') {           //Caso o usuário tenha digitado a letra k
-    digitalWrite(6, HIGH);
+  if (option == 'r') {           //Caso o usuário tenha digitado a letra r
+    
+    digitalWrite(6, HIGH);        //Emite um sinal sonoro
     delay(500);
     digitalWrite(6, LOW);
     delay(500);
