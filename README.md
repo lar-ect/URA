@@ -13,6 +13,7 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 ## Versões do URA
 ### Versão 1.0 - Papelão Azul
 
+<<<<<<< HEAD
 [Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/Vers%C3%A3o%201.0)
 
 ### Versão 2.0 - Toninho
@@ -22,6 +23,17 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 ### Versão 3.0
 
 [Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/versao_3)
+=======
+[Acesse aqui.](Vers%C3%A3o%201.0)
+
+### Versão 2.0 - Toninho
+
+[Acesse aqui.](toninho)
+
+### Versão 3.0
+
+[Acesse aqui.](versao_3)
+>>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
  
 ### Sugestão de Cronograma de Atividades
 * 03/04/2017 - Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais 
@@ -56,4 +68,8 @@ https://github.com/orivaldosantana/GPRo/tree/master/arduino
 ## Informes
 
 * As oficinas ocorrerão TODA segunda , no horario das 14:35 as 16:35 no laboratório 02, no segundo andar do prédio da Escola de Ciencia e técnologia (ECT)  na UFRN.
+<<<<<<< HEAD
 >>>>>>> a97cc99fb4f25351422b4bbd5359e50c1bc5d3e0
+=======
+
+>>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75

@@ -22,29 +22,52 @@
 [Placa eletrônica desenvolvida para este projeto](https://github.com/mpsdantas/EducaIno)
 
 ## Peças Impressas 
+<<<<<<< HEAD
 * [Disco para contagem de giros](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/contadorDeGiros/tachoDiscSmall.stl) 
+=======
+* [Disco para contagem de giros](Pecas_3D_STLs/contadorDeGiros/tachoDiscSmall.stl) 
+>>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
 
     `fonte`: [thingiverse](http://www.thingiverse.com/thing:1460059)
 
 
+<<<<<<< HEAD
 * [Suporte para motor DC (direito) ](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/suporteMotorDireito/motorMountMirrored.stl) 
 
 * [Suporte para motor DC (esquerdo) ](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/suporteMotorEsquerdo/motorMount.stl)
+=======
+* [Suporte para motor DC (direito) ](Pecas_3D_STLs/suporteMotorDireito/motorMountMirrored.stl) 
+
+* [Suporte para motor DC (esquerdo) ](Pecas_3D_STLs/suporteMotorEsquerdo/motorMount.stl)
+>>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
 
    `fonte`: [thingiverse](http://www.thingiverse.com/thing:1473508)
 
 * Peças para estrutura de suporte das bateria e da placa   
     - hastes:  
+<<<<<<< HEAD
        --> [**100mm**](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/hastes/haste_100mm/hastes_inferiores_superiores.stl)  
        --> [**80mm**](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/hastes/haste_80mm/haste_lateral_horizontais.stl)  
     - encaixes  
         --> [**24x24**](https://github.com/orivaldosantana/ProjetoURA/blob/master/toninho/Pecas_3D_STLs/Encaixe/encaixe_24_24.stl)
+=======
+       --> [**100mm**](Pecas_3D_STLs/hastes/haste_100mm/hastes_inferiores_superiores.stl)  
+       --> [**80mm**](Pecas_3D_STLs/hastes/haste_80mm/haste_lateral_horizontais.stl)  
+    - encaixes  
+        --> [**24x24**](Pecas_3D_STLs/Encaixe/encaixe_24_24.stl)
+>>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
               
     `fonte`: [orivaldo](https://github.com/orivaldosantana/EstruturaURA/tree/master/stls/robo_rodas_maior) 
 
 ## Fotos 
 * Álbum no Google Fotos, https://goo.gl/photos/yvuef9zv1RtGaRwc9
 
+<<<<<<< HEAD
+=======
+## Tutorial de Montagem 
+* [Acesse aqui.](TutorialMontagemToninho.md)
+
+>>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
 ## Referêcias e Links 
 * Ponte H L293D, http://learning.grobotronics.com/2013/07/l293d-motor-driver/  
 * Ponte H L298, http://blog.filipeflop.com/motores-e-servos/motor-dc-arduino-ponte-h-l298n.html
