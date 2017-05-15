@@ -33,43 +33,53 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 ### Versão 3.0
 
 [Acesse aqui.](versao_3)
+<<<<<<< HEAD
 >>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
  
+=======
+
+>>>>>>> c334cc9176ce7bbc806bf291712e2db687d59beb
 ### Sugestão de Cronograma de Atividades
-* 03/04/2017 - Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais 
+* 03/04/2017 - Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais
 * 10/04/2017 - Oficina sobre Motores DC
-* 17/04/2017 - Oficina sobre sensores Ultrassônicos 
+* 17/04/2017 - Oficina sobre sensores Ultrassônicos
+* 24/04/2017 - Oficina com desafios sobre o conteúdo visto
+* 01/05/2017 - Feriado
+* 08/05/2017 - Oficina sobre sensor de reflectância 
 
 ### Slide de Aulas e conteúdo extra
-[Acesse aqui.](https://github.com/lar-ect/URA/tree/master/versao_3/Slides%20de%20aula)
+[Acesse aqui.](Slides%20de%20aula)
 
-## Referências e Links 
+## Referências e Links
 
 ### Projeto URA
 * Página do Projeto no SIGAA/UFRN, [https://sigaa.ufrn.br/sigaa/](https://sigaa.ufrn.br/sigaa/link/public/extensao/visualizacaoAcaoExtensao/91803806)
-* Página no FaceBook, https://www.facebook.com/URAUFRN/ 
+* Página no FaceBook, https://www.facebook.com/URAUFRN/
 
-### Uso do Arduíno 
-* Usando no linux dos terminais leves da ECT/UFRN, 
-https://github.com/orivaldosantana/GPRo/tree/master/arduino 
+### Uso do Arduíno
+* Usando no linux dos terminais leves da ECT/UFRN,
+https://github.com/orivaldosantana/GPRo/tree/master/arduino
 
-### Tutoriais Arduíno 
-* Apostila, http://cursodearduino.com.br/apostila/apostila-rev4.pdf 
+### Tutoriais Arduíno
+* Apostila, http://cursodearduino.com.br/apostila/apostila-rev4.pdf
 * Lições sobre Arduíno por Paul McWhorter: http://www.toptechboy.com/arduino-lessons/
-* Usando motor DC com Arduíno e CI L293D, http://www.arduinoecia.com.br/2014/04/controle-de-motor-cc-com-o-l293d-ponte-h.html 
+* Usando motor DC com Arduíno e CI L293D, http://www.arduinoecia.com.br/2014/04/controle-de-motor-cc-com-o-l293d-ponte-h.html
 
 ### Livros Recomendados
-* Arduino básico - Michael McRoberts, 1º edição 
-* Arduino CAP1 e CAP2 -  João Alexandre da Silveira 
-* C++ Básico - Luis Antonio, Apostilando.com 
-* Apostila de DEV C++ 
+* Arduino básico - Michael McRoberts, 1º edição
+* Arduino CAP1 e CAP2 -  João Alexandre da Silveira
+* C++ Básico - Luis Antonio, Apostilando.com
+* Apostila de DEV C++
 * C completo e total - Herbert Schildt, 3º edição Revista e Atualizada
 
 ## Informes
 
 * As oficinas ocorrerão TODA segunda , no horario das 14:35 as 16:35 no laboratório 02, no segundo andar do prédio da Escola de Ciencia e técnologia (ECT)  na UFRN.
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> a97cc99fb4f25351422b4bbd5359e50c1bc5d3e0
 =======
 
 >>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
+=======
+>>>>>>> c334cc9176ce7bbc806bf291712e2db687d59beb
