@@ -12,8 +12,7 @@ void manualContinua() {
   char aux;
   Serial.println("Voce escolheu a opcao Manual Continua: f= para frente, t= tras, d= direita, e= esquerda, p= parar. ");
 
-  while (comando != 's')
-  {
+  while (comando != 's') {  // Mantem no laço até que o usuário digite s  
     if (Serial.available()) {
       comando = 0;
       comando = Serial.read();
@@ -33,7 +32,7 @@ void manualContinua() {
       aux = comando;
     }
     int seg = 11, but = 0;
- 
+
 
     if (comando == 'y') {   //gira no sentido horário
       fast = false;
@@ -51,17 +50,17 @@ void manualContinua() {
         motor1.detach();
         motor2.detach();
       }
-      else {                                  
+      else {
         motor1.attach(SERVO1);
         motor2.attach(SERVO4);
       }
       motor1.write(180);
       motor2.write(0);
     }
-    
+
     but = 0;
-    
-    if (comando == 't' && but == 0 ) {
+
+    if (comando == 't' && but == 0 ) {  // Anda pra frente caso o Botão esteje pressionado
       fast = false;
       but = digitalRead(BOTAO);
       Serial.println(but);
@@ -76,7 +75,7 @@ void manualContinua() {
       motor1.write(0);
       motor2.write(180);
     }
-    if (comando == 'b') {
+    if (comando == 'b') { //Anda pra trás
       fast = false;
       motor1.attach(SERVO1);
       motor2.attach(SERVO4);
@@ -90,7 +89,7 @@ void manualContinua() {
       motor1.write(0);
       motor2.write(0);
     }
-    if (comando == 'd') {   //Girar no sentido anti-horario
+    if (comando == 'd') {   //Girar no sentido horario
       fast = false;
       motor1.attach(SERVO1);
       motor2.attach(SERVO4);

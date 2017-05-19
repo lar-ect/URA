@@ -42,7 +42,8 @@ void melodia(){
         }
         j = j - 1;
         tempo = atoi(n);// Converte os caracteres do vetor n em números.
-        if (v[j - w] == 'f') {
+        
+        if (v[j - w] == 'f') {  //Anda pra frente
           motor1.attach(SERVO1);
           motor2.attach(SERVO4);
           motor1.write(180);
@@ -52,7 +53,7 @@ void melodia(){
           motor2.detach();
           delay2(DMOTOR);
         }
-        if (v[j - w] == 't') {
+        if (v[j - w] == 't') {  //Anda pra trás
           motor1.attach(SERVO1);
           motor2.attach(SERVO4);
           motor1.write(0);
@@ -62,7 +63,7 @@ void melodia(){
           motor2.detach();
           delay2(DMOTOR);
         }
-        if (v[j - w] == 'd') {
+        if (v[j - w] == 'd') {  //Gira no sentido horario
           motor1.attach(SERVO1);
           motor2.attach(SERVO4);
           motor1.write(180);
@@ -72,7 +73,7 @@ void melodia(){
           motor2.detach();
           delay2(DMOTOR);
         }
-        if (v[j - w] == 'e') {
+        if (v[j - w] == 'e') {  //Gira no sentido anti-horario
           motor1.attach(SERVO1);
           motor2.attach(SERVO4);
           motor1.write(0);

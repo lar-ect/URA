@@ -9,28 +9,28 @@ void ultrassomAutomatica(){
   delay(500);
   
   Serial.println("Voce escolheu a opcao Ultrassom automatica ");
-  while (comando != 's') {
+  
+  while (comando != 's') {  //Permanece no laço até que o usuário digite a letra s
     if (Serial.available()) {
       comando = Serial.read();
       Serial.println(comando);
     }
     t = 30;
-    motor1.attach(SERVO1);    //Vincula o pino  2 ao motor1
-    motor2.attach(SERVO4);    //Vincula o pino  14 ao motor2
-    motor1.write(120);        //Gira no sentido anti-horario
-    motor2.write(0);
+    motor1.attach(SERVO1);    
+    motor2.attach(SERVO4);   
+    motor1.write(120);        
     delay(300);
     t = dist();
     
     if (t > 0 && t < 23) {    //Se a distancia estiver entre 0 e 23 cm
-      motor1.write(40);       //Anda pra frente por 600 milliSegundos
+      motor1.write(40);       //Gira no sentido anti-horario
       motor2.write(40);
       delay(600);
-      motor1.detach();        //Desvincula o motor1 do pino 2
-      motor2.detach();        //Desvincula o motor2 do pino 14
+      motor1.detach();        
+      motor2.detach();        
       delay(1000);
       
-      do {                    //Garante que a variavel te seja positiva
+      do {                    
         te = dist();
       } 
       while (te < 0);
@@ -40,7 +40,7 @@ void ultrassomAutomatica(){
       Serial.println(te);
       motor1.attach(SERVO1);  
       motor2.attach(SERVO4);
-      motor1.write(140);    //Anda para tras 
+      motor1.write(140);    //Gira no sentido horario
       motor2.write(140);
       delay(1200);
       
@@ -58,7 +58,7 @@ void ultrassomAutomatica(){
        delay(600); */
       Serial.print(" aehoud: ");
       Serial.println(td);
-      if (te > td) {
+      if (te > td) {  //Gira no sentido anti-horario
         motor1.attach(SERVO1);
         motor2.attach(SERVO4);
         motor1.write(40);
