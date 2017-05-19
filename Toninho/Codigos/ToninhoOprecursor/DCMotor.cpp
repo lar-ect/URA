@@ -10,6 +10,7 @@ DCMotor::DCMotor(int in1, int in2, int in3, int in4){
 }
 
 void DCMotor::forward(){
+  Serial.begin(9600);
   clockwise(_in1,_in2);
   clockwise(_in3,_in4);
 }
@@ -35,7 +36,9 @@ void DCMotor::stop() {
 }
 
 void DCMotor::clockwise(int inx, int iny){
-  digitalWrite(inx, 1); digitalWrite(iny, 0);
+  Serial.println("ENTREI NO CLOCKWISE");
+  digitalWrite(6, HIGH); 
+  digitalWrite(5, LOW);
 }
 void DCMotor::antiClockwise(int inx, int iny){
   digitalWrite(inx, 0); digitalWrite(iny, 1);

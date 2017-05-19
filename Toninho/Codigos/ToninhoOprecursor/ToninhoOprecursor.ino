@@ -29,7 +29,7 @@
  */
 #include "DCMotor.h"
 
-DCMotor dcMotor(5,4,3,2);
+DCMotor dcMotor(6,5,4,2);
 
 int firstSensor = 0;    // first analog sensor
 int secondSensor = 0;   // second analog sensor
@@ -37,7 +37,15 @@ int thirdSensor = 0;    // digital sensor
 int inByte = 0;         // incoming serial byte
 
 void setup() {
+  pinMode(2,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(6,OUTPUT);
+  pinMode(5,OUTPUT);
   
+pinMode(3,OUTPUT);
+  digitalWrite(3,HIGH); 
+  pinMode(7,OUTPUT);
+  digitalWrite(7,HIGH);    
 }
 
 void loop() {
@@ -45,9 +53,9 @@ void loop() {
    
     // dcMotor.left();      // ele vira para a esquerda (jeito 1 )
    // dcMotor.righ();      // ele vira para a direita (jeito 1)
-  //  dcMotor.forward();  // ele segue em frente    
+   dcMotor.forward();  // ele segue em frente    
  // dcMotor.rightBack(); // ele vira para a direita (jeito 2)   
-    dcMotor.leftBack(); // ele vira para a esquerda (jeito 2)
+    //dcMotor.leftBack(); // ele vira para a esquerda (jeito 2)
   
   
     
