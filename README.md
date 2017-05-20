@@ -11,9 +11,9 @@ A presente proposta tem como objetivo desenvolver uma ação integrada que conte
 As atividades deste projeto estarão organizadas em oficinas temática com o objetivo de trazer o conteúdo de robótica para o dia a dia dos participantes do projeto. Avaliaremos o desenvolvimento da aprendizagem e dificuldades dos professores ao estar diante de um novo conhecimento, avaliaremos o desenvolvimento das oficinas planejadas, executadas pelos professores aos seus alunos e a qualidade dos materiais produzidos
 
 ## Versões do URA
+
 ### Versão 1.0 - Papelão Azul
 
-<<<<<<< HEAD
 [Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/Vers%C3%A3o%201.0)
 
 ### Versão 2.0 - Toninho
@@ -23,22 +23,7 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 ### Versão 3.0
 
 [Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/versao_3)
-=======
-[Acesse aqui.](Vers%C3%A3o%201.0)
 
-### Versão 2.0 - Toninho
-
-[Acesse aqui.](toninho)
-
-### Versão 3.0
-
-[Acesse aqui.](versao_3)
-<<<<<<< HEAD
->>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
- 
-=======
-
->>>>>>> c334cc9176ce7bbc806bf291712e2db687d59beb
 ### Sugestão de Cronograma de Atividades
 * 03/04/2017 - Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais
 * 10/04/2017 - Oficina sobre Motores DC
@@ -53,17 +38,19 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 ## Referências e Links
 
 ### Projeto URA
-* Página do Projeto no SIGAA/UFRN, [https://sigaa.ufrn.br/sigaa/](https://sigaa.ufrn.br/sigaa/link/public/extensao/visualizacaoAcaoExtensao/91803806)
-* Página no FaceBook, https://www.facebook.com/URAUFRN/
+* [Página do Projeto no SIGAA/UFRN](https://sigaa.ufrn.br/sigaa/link/public/extensao/visualizacaoAcaoExtensao/91803806)
+* [Página no FaceBook](https://www.facebook.com/URAUFRN/)
 
 ### Uso do Arduíno
-* Usando no linux dos terminais leves da ECT/UFRN,
-https://github.com/orivaldosantana/GPRo/tree/master/arduino
+* [Usando no linux dos terminais leves da ECT/UFRN](https://github.com/orivaldosantana/GPRo/tree/master/arduino)
 
 ### Tutoriais Arduíno
-* Apostila, http://cursodearduino.com.br/apostila/apostila-rev4.pdf
-* Lições sobre Arduíno por Paul McWhorter: http://www.toptechboy.com/arduino-lessons/
-* Usando motor DC com Arduíno e CI L293D, http://www.arduinoecia.com.br/2014/04/controle-de-motor-cc-com-o-l293d-ponte-h.html
+* [Apostila](http://cursodearduino.com.br/apostila/apostila-rev4.pdf)
+* [Lições sobre Arduíno por Paul McWhorter](http://www.toptechboy.com/arduino-lessons/)
+* [Usando motor DC com Arduíno e CI L293D](http://www.arduinoecia.com.br/2014/04/controle-de-motor-cc-com-o-l293d-ponte-h.html)
+
+### Git e Github
+* [Curso William Justen](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes)
 
 ### Livros Recomendados
 * Arduino básico - Michael McRoberts, 1º edição
@@ -75,11 +62,3 @@ https://github.com/orivaldosantana/GPRo/tree/master/arduino
 ## Informes
 
 * As oficinas ocorrerão TODA segunda , no horario das 14:35 as 16:35 no laboratório 02, no segundo andar do prédio da Escola de Ciencia e técnologia (ECT)  na UFRN.
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> a97cc99fb4f25351422b4bbd5359e50c1bc5d3e0
-=======
-
->>>>>>> e337a96a33b398ac8d67efbc24b7b1a4ffef1a75
-=======
->>>>>>> c334cc9176ce7bbc806bf291712e2db687d59beb
