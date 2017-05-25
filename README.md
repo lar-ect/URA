@@ -31,6 +31,21 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 * 24/04/2017 - Oficina com desafios sobre o conteúdo visto
 * 01/05/2017 - Feriado
 * 08/05/2017 - Oficina sobre sensor de reflectância 
+* 15/05/2017 - PWM
+* 22/05/2017 - Exercício com o carrinho
+* 29/05/2017 - Seguir Linha
+* 05/06/2017 - Desviando obstáculo + encruzilhada
+* 12/06/2017 - Prática
+* 19/06/2017 - Colocar o verde
+* 26/06/2017 - Exercício
+* 03/07/2017 - Redutor de Velocidade + Gap’s
+* 10/07/2017 - Cinza
+* 17/07/2017 - Vítimas
+* 24/07/2017 - Exercício
+* 31/07/2017 - Exercício
+* 07/08/2017 - Exercício
+* 14/08/2017 - Exercício
+* 19/08/2017 - OBR - ETAPA REGIONAL / RN
 
 ### Slide de Aulas e conteúdo extra
 [Acesse aqui.](Slides%20de%20aula)
