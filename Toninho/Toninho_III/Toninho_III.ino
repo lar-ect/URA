@@ -27,9 +27,7 @@ void loop() {
  // dcMotor.rightBack(); // ele vira para a direita (jeito 2)   
     //dcMotor.leftBack(); // ele vira para a esquerda (jeito 2)
     dcMotor.forward();
-    delay(3000);
-    dcMotor.backward();
-    delay(3000);
+//     
     //Serial.println(sensor1.detected());
    
 
