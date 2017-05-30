@@ -67,4 +67,48 @@ void DCMotor::setup() {
 }
 
 
+Sensor::Sensor(int pin) {
+  _pin = pin;
+
+}
+void Sensor::setup() {
+  pinMode(_pin, INPUT);
+}
+
+boolean Sensor::detected() {
+  return digitalRead(_pin);
+}
+
+Ultrasonic::Ultrasonic(int TRIG, int ECHO) {
+  Trig_pin = TRIG;
+  Echo_pin = ECHO;
+  Time_out = 3000; // 3000 µs = 50cm // 30000 µs = 5 m
+}
+
+
+
+long Ultrasonic::tempo() {
+  digitalWrite(Trig_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(Trig_pin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(Trig_pin, LOW);
+  duration = pulseIn(Echo_pin, HIGH, Time_out);
+  if ( duration == 0 ) {
+    duration = Time_out;
+  }
+  return duration;
+}
+
+long Ultrasonic::dist() {
+  tempo();
+  distance_cm = duration / 29 / 2 ;
+  return distance_cm;
+
+}
+void Ultrasonic::setup() {
+  pinMode(Trig_pin, OUTPUT);
+  pinMode(Echo_pin, INPUT);
+}
+
 
