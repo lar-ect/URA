@@ -1,17 +1,21 @@
-
 #include "URA.h"
 
-DCMotor dcMotor(5,7,3,2,4,6);
+//DCMotor dcMotor(5,7,3,2,4,6);
+Sensor sensor1(12);
+Ultrasonic ultrassonic();
 
 // DCMotor dcMotor(5,7,3,2,4,6); Para placa nova do URA
-//DCMotor dcMotor(6,5,4,2,3,7); Para Toninho III
+DCMotor dcMotor(6,5,4,2,3,7);// Para Toninho III
 
 
 
 void setup() {
   Serial.begin(9600);
   Serial.println("TONINHO II");
+  pinMode(11,OUTPUT);
+  digitalWrite(11,HIGH);
   dcMotor.setup();
+  sensor1.setup();
   
 }
 
@@ -26,10 +30,9 @@ void loop() {
     delay(3000);
     dcMotor.backward();
     delay(3000);
-
+    //Serial.println(sensor1.detected());
    
 
    // digitalWrite(4);
   
 }
-
