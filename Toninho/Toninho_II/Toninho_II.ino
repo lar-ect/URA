@@ -5,7 +5,7 @@ Sensor sensor1(12);
 Ultrasonic ultrassonic();
 
 // DCMotor dcMotor(5,7,3,2,4,6); Para placa nova do URA
-DCMotor dcMotor(5,4,3,2,8,7);// Para Toninho III
+DCMotor dcMotor(5,4,3,2,8,7);// Para Toninho II
 
 
 
