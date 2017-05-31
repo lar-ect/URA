@@ -11,7 +11,7 @@ DCMotor dcMotor(5,4,3,2,8,7);// Para Toninho III
 
 void setup() {
   Serial.begin(9600);
-  Serial.println("TONINHO II");
+  Serial.println("TONINHO III");
   pinMode(11,OUTPUT);
   digitalWrite(11,HIGH);
   dcMotor.setup();
