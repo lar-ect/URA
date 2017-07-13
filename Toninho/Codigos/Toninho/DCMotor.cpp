@@ -9,12 +9,12 @@ DCMotor::DCMotor(int in1, int in2, int in3, int in4){
 
   //previousMillis =0;
   
-  interval = 2000;
   
 }
 
 void DCMotor::forward(){
     clockwise(_in1,_in2);
+    
     clockwise(_in3,_in4);  
 }
 
@@ -48,17 +48,18 @@ void DCMotor::antiClockwise(int inx, int iny){
 void DCMotor::leftBack(){
 
   antiClockwise(_in1,_in2);
+  digitalWrite(_in3, 0); digitalWrite(_in4, 0);
 }
 
 void DCMotor::rightBack(){
-
+  digitalWrite(_in1, 0); digitalWrite(_in2, 0);
   antiClockwise(_in3,_in4);
 }
-bool DCMotor::slowMode(){
+bool DCMotor::slowMode(long interval){
   
    currentMillis = millis();
    
-  if(currentMillis - previousMillis > interval){  //  o tempo que ele fica parado , interval = 100
+  if(currentMillis - previousMillis > interval){  
    
     estado = !estado;
     previousMillis=currentMillis;
@@ -72,7 +73,7 @@ bool DCMotor::slowMode(){
 
 void DCMotor::forward2(){
 
-  if( slowMode() ){
+  if( slowMode(2000) ){ //  o tempo que ele fica parado , interval = 2000
     
       stop();
       

@@ -44,13 +44,11 @@ int pin_VisionSensorRight = 8;
   int visionSensorRight = digitalRead( pin_VisionSensorRight);
 Serial.println(visionSensorLeft);
   if(visionSensorLeft)
-     dcMotor.leftBack();
-     else
-     ;
-  else if(visionSensorRight==1)
-    // dcMotor.rightBack();
-  // else
-  //  dcMotor.forward2();
+     dcMotor.left();
+  else if(visionSensorRight)
+     dcMotor.right();
+   else
+    dcMotor.forward2();
     
     
  }
@@ -71,7 +69,9 @@ void loop() {
   //  dcMotor.forward();  // ele segue em frente    
  // dcMotor.rightBack(); // ele vira para a direita (jeito 2)   
  // dcMotor.leftBack(); // ele vira para a esquerda (jeito 2)
- seguirLinha();
+// dcMotor.forward2();
+ 
+// seguirLinha();
 
 
 }

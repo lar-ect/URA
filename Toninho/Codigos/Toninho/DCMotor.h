@@ -16,7 +16,7 @@ class DCMotor
     void stop(); 
     void leftBack();
     void rightBack();
-    bool slowMode();
+    bool slowMode(long interval);
 
   private:
     void clockwise(int inx, int iny);
@@ -24,7 +24,6 @@ class DCMotor
     int _in1, _in2, _in3, _in4; 
     unsigned long currentMillis;
     unsigned long previousMillis = millis();
-    unsigned long interval = 2000;
     bool estado;
     //const int  IN1 = 5, IN2 = 4, IN3 = 3, IN4 = 2;//pinos
   
