@@ -37,7 +37,7 @@ int pin_visionSensorLeft = 10;
 int pin_VisionSensorRight = 8;
 
  
- 
+ //oi
 
  void seguirLinha(){
   int visionSensorLeft = digitalRead(  pin_visionSensorLeft);
