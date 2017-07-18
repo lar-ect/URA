@@ -29,7 +29,8 @@
  */
 #include "DCMotor.h"
 
-   
+
+
 
 
 DCMotor dcMotor(5,4,2,3);
@@ -37,19 +38,11 @@ int pin_visionSensorLeft = 10;
 int pin_VisionSensorRight = 8;
 
  
- //oi
-
  void seguirLinha(){
   int visionSensorLeft = digitalRead(  pin_visionSensorLeft);
   int visionSensorRight = digitalRead( pin_VisionSensorRight);
-Serial.println(visionSensorLeft);
-  if(visionSensorLeft)
-     dcMotor.left();
-  else if(visionSensorRight)
-     dcMotor.right();
-   else
-    dcMotor.forward2();
-    
+  Serial.println(visionSensorLeft);
+ 
     
  }
     
@@ -71,7 +64,7 @@ void loop() {
  // dcMotor.leftBack(); // ele vira para a esquerda (jeito 2)
 // dcMotor.forward2();
  
-// seguirLinha();
+ seguirLinha();
 
 
 }
