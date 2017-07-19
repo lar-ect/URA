@@ -1,92 +1,121 @@
 #include "Arduino.h"
 #include "DCMotor.h"
 
-DCMotor::DCMotor(int in1, int in2, int in3, int in4){
+DCMotor::DCMotor(int in1, int in2, int in3, int in4) {
   _in1 = in1;
   _in2 = in2;
   _in3 = in3;
-  _in4 = in4; 
+  _in4 = in4;
 
-  //previousMillis =0;
-  
-  
+
+
+
 }
 
-void DCMotor::forward(){
-    clockwise(_in1,_in2);
-    
-    clockwise(_in3,_in4);  
+void DCMotor::forward() {
+  clockwise(_in1, _in2);
+  clockwise(_in3, _in4);
 }
 
-void DCMotor::backward(){
-  antiClockwise(_in1,_in2);
-  antiClockwise(_in3,_in4);  
+void DCMotor::backward() {
+  antiClockwise(_in1, _in2);
+  antiClockwise(_in3, _in4);
 }
 
-void DCMotor::left(){
-  antiClockwise(_in1,_in2);
-  clockwise(_in3,_in4);  
+void DCMotor::left() {
+  antiClockwise(_in1, _in2);
+  clockwise(_in3, _in4);
 }
 
-void DCMotor::right(){
-  clockwise(_in1,_in2);
-  antiClockwise(_in3,_in4);
+void DCMotor::right() {
+  clockwise(_in1, _in2);
+  antiClockwise(_in3, _in4);
 }
 
 void DCMotor::stop() {
-    digitalWrite(_in1, 0); digitalWrite(_in2, 0);
-    digitalWrite(_in3, 0); digitalWrite(_in4, 0);  
+  stopDCMotor(_in1, _in2);
+  stopDCMotor(_in3, _in4);
+
 }
 
-void DCMotor::clockwise(int inx, int iny){
+void DCMotor::slowForward() {
+
+  if (slowMode(20))
+    stop();
+
+  else
+    forward();
+
+}
+
+void DCMotor::slowBackward() {
+  if (slowMode(20))
+    stop();
+  else
+    backward();
+
+}
+
+void DCMotor::slowLeft() {
+  if (slowMode(20))
+    stop();
+  else
+    left();
+
+}
+
+void DCMotor::slowRight() {
+  if (slowMode(20))
+    stop();
+  else
+    right();
+
+}
+
+void DCMotor::leftBack() {
+
+  antiClockwise(_in1, _in2);
+  stopDCMotor(_in3, _in4);
+}
+
+void DCMotor::rightBack() {
+  stopDCMotor(_in1, _in2);
+  antiClockwise(_in3, _in4);
+}
+
+void DCMotor::clockwise(int inx, int iny) {
   digitalWrite(inx, 1); digitalWrite(iny, 0);
 }
-void DCMotor::antiClockwise(int inx, int iny){
+
+void DCMotor::antiClockwise(int inx, int iny) {
   digitalWrite(inx, 0); digitalWrite(iny, 1);
 }
 
-void DCMotor::leftBack(){
+bool DCMotor::slowMode(long interval) {
 
-  antiClockwise(_in1,_in2);
-  digitalWrite(_in3, 0); digitalWrite(_in4, 0);
-}
+  unsigned long currentMillis = millis();
 
-void DCMotor::rightBack(){
-  digitalWrite(_in1, 0); digitalWrite(_in2, 0);
-  antiClockwise(_in3,_in4);
-}
-bool DCMotor::slowMode(long interval){
-  
-   currentMillis = millis();
-   
-  if(currentMillis - previousMillis > interval){  
-   
+  if (currentMillis - previousMillis > interval) {
+
     estado = !estado;
-    previousMillis=currentMillis;
+    previousMillis = currentMillis;
   }
-    if(estado)
-      return true;
-    else
-      return false;
-      
+
+  if (estado)
+    return true;
+  else
+    return false;
+
 }
 
-void DCMotor::forward2(){
-
-  if( slowMode(2000) ){ //  o tempo que ele fica parado , interval = 2000
-    
-      stop();
-      
-  }
-  
-   forward();
-  
+void DCMotor::stopDCMotor(int inx, int iny) {
+  digitalWrite(inx, 0); digitalWrite(iny, 0);
 }
 
-  
 
 
-  
+
+
 
 
 
