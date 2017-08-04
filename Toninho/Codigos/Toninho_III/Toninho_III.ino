@@ -1,22 +1,23 @@
 #include "URA.h"
 
 //DCMotor dcMotor(5,7,3,2,4,6);
-Sensor sensor1(8), sensor2(9);
-Ultrasonic ultrassonic();
+Sensor esq(9), Dir(8);
+Ultrasonic ultrassonic(11,12);
 
-// DCMotor dcMotor(5,7,3,2,4,6); Para placa nova do URA
-DCMotor dcMotor(6,5,4,2,3,7);// Para Toninho III
+ DCMotor dcMotor(5,7,2,3,4,6); //Para placa nova do URA
+//DCMotor dcMotor(6,5,4,2,3,7);// Para Toninho III
+//DCMotor dcMotor(12,13,9,8,11,10); //Para o shield de arduino UNO  
 
 
 
 void setup() {
   Serial.begin(9600);
   Serial.println("TONINHO II");
-  pinMode(11,OUTPUT);
-  digitalWrite(11,HIGH);
+ 
   dcMotor.setup();
-  sensor1.setup();
-  
+  esq.setup();
+  Dir.setup();
+  ultrassonic.setup();
 }
 
 void loop() {
@@ -26,10 +27,21 @@ void loop() {
   //  dcMotor.forward();  // ele segue em frente    
  // dcMotor.rightBack(); // ele vira para a direita (jeito 2)   
     //dcMotor.leftBack(); // ele vira para a esquerda (jeito 2)
+    /*
     dcMotor.forward();
-//     
-    //Serial.println(sensor1.detected());
-   
+    delay(3000);
+    dcMotor.backward();
+    delay(3000);
+    */
+    
+
+//  
+    /*  
+    Serial.print(esq.detected());
+    Serial.print('\t');
+    Serial.println(Dir.detected());
+    */
+    Serial.println(ultrassonic.dist());
 
    // digitalWrite(4);
   

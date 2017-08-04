@@ -94,6 +94,8 @@ long Ultrasonic::tempo() {
   delayMicroseconds(10);
   digitalWrite(Trig_pin, LOW);
   duration = pulseIn(Echo_pin, HIGH, Time_out);
+  Serial.print("DURATION:");
+  Serial.println(duration);
   if ( duration == 0 ) {
     duration = Time_out;
   }
@@ -109,6 +111,9 @@ long Ultrasonic::dist() {
 void Ultrasonic::setup() {
   pinMode(Trig_pin, OUTPUT);
   pinMode(Echo_pin, INPUT);
+  Serial.print("TRIg");
+  Serial.println(Echo_pin);
+  
 }
 
 
