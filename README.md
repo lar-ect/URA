@@ -25,27 +25,23 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 [Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/versao_3)
 
 ### Sugestão de Cronograma de Atividades
-* 03/04/2017 - Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais
-* 10/04/2017 - Oficina sobre Motores DC
-* 17/04/2017 - Oficina sobre sensores Ultrassônicos
-* 24/04/2017 - Oficina com desafios sobre o conteúdo visto
-* 01/05/2017 - Feriado
-* 08/05/2017 - Oficina sobre sensor de reflectância 
-* 15/05/2017 - PWM
-* 22/05/2017 - Exercício com o carrinho
-* 29/05/2017 - Seguir Linha
-* 05/06/2017 - Desviando obstáculo + encruzilhada
-* 12/06/2017 - Prática
-* 19/06/2017 - Colocar o verde
-* 26/06/2017 - Exercício
-* 03/07/2017 - Redutor de Velocidade + Gap’s
-* 10/07/2017 - Cinza
-* 17/07/2017 - Vítimas
-* 24/07/2017 - Exercício
-* 31/07/2017 - Exercício
-* 07/08/2017 - Exercício
-* 14/08/2017 - Exercício
-* 19/08/2017 - OBR - ETAPA REGIONAL / RN
+* Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais
+* Oficina sobre Motores DC
+* Oficina sobre sensores Ultrassônicos
+* Oficina com desafios sobre o conteúdo visto
+* Oficina sobre sensor de reflectância 
+* PWM
+* Exercício com o carrinho
+* Seguir Linha
+* Desviando obstáculo + encruzilhada
+* Prática
+* Colocar o verde
+* Exercício
+* Redutor de Velocidade + Gap’s
+* Cinza
+* Vítimas
+* Exercício
+* OBR - ETAPA REGIONAL / RN
 
 ### Slide de Aulas e conteúdo extra
 [Acesse aqui.](Slides%20de%20aula)
@@ -74,6 +70,3 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 * Apostila de DEV C++
 * C completo e total - Herbert Schildt, 3º edição Revista e Atualizada
 
-## Informes
-
-* As oficinas ocorrerão TODA segunda , no horario das 14:35 as 16:35 no laboratório 02, no segundo andar do prédio da Escola de Ciencia e técnologia (ECT)  na UFRN.
