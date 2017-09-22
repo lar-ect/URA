@@ -30,19 +30,20 @@
 #include "URA.h"
 
 
-
+#define echo 12
+#define trig 11
 
 
 DCMotor dcMotor(5, 4, 2, 3);
 
-SensorLinha sensorLinha (10, 8);
+//SensorLinha sensorLinha (0, 1);
 /*
   int pin_visionSensorLeft = 10;
   int pin_VisionSensorRight = 8;
 */
 
 void seguirLinha() {
-
+/*
   if (sensorLinha.detectedByLeft() && !sensorLinha.detectedByRight() )
     dcMotor.slowLeft();
   else if (!sensorLinha.detectedByLeft() && sensorLinha.detectedByRight() )
@@ -51,14 +52,20 @@ void seguirLinha() {
     dcMotor.slowForward();
   else
     dcMotor.slowBackward();
-
-
-
+*/
 }
 
+SensorUltrassom sensorTeste(12,13);
 
 
 void setup() {
+  /*
+    int trig = 11; // trig envia o pulso
+    int echo = 12; // echo rescebe o pulso
+  */
+ // pinMode(echo, INPUT);
+ // pinMode(trig, OUTPUT);
+
   Serial.begin(9600);
   /*
     pinMode(pin_visionSensorLeft, INPUT);
@@ -67,17 +74,27 @@ void setup() {
 }
 
 void loop() {
+
+
+
+  //Serial.println( analogRead(0) );
+
+  //sensorLinha.debugLeft();
+  //  sensorLinha.debugRight();
+
+
+
   //
   // dcMotor.left();      // ele vira para a esquerda (jeito 1 )
   // dcMotor.right();      // ele vira para a direita (jeito 1)
   //  dcMotor.forward();  // ele segue em frente
   // dcMotor.rightBack(); // ele vira para a direita (jeito 2)
   // dcMotor.leftBack(); // ele vira para a esquerda (jeito 2)
-  // dcMotor.forward2();
+  // dcMotor.slowForward();
   //dcMotor.slowLeft();
-
-
   //seguirLinha();
+
+
 
 
 }

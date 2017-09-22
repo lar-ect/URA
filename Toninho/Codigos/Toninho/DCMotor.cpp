@@ -8,8 +8,6 @@ DCMotor::DCMotor(int in1, int in2, int in3, int in4) {
   _in4 = in4;
 
 
-
-
 }
 
 void DCMotor::forward() {

@@ -19,11 +19,11 @@ class DCMotor
     void slowRight();
     void leftBack();
     void rightBack();
+    bool slowMode(long interval);
     
   private:
     void clockwise(int inx, int iny);
     void antiClockwise(int inx, int iny);
-    bool slowMode(long interval);
     void stopDCMotor(int inx, int iny);
     int _in1, _in2, _in3, _in4;
     unsigned long previousMillis = millis();
