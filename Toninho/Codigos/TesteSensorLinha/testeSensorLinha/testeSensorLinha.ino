@@ -25,7 +25,7 @@ void setup() {
      essa função serve para iniciar  a comunicação pelo USB,
      também conhecida como comunicação serial
   */
-  Serial.begin(9600);
+  Serial.begin(9600); //begin em portugues significa começar 
 
 
   /*

@@ -20,7 +20,7 @@ void setup() {
   */
   
  
-  Serial.begin(9600);  // begin em portugues significa começar
+  Serial.begin(9600);  //begin em portugues significa começar 
 
 
 }
