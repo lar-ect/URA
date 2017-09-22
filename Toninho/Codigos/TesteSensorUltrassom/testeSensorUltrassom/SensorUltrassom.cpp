@@ -26,7 +26,7 @@ int SensorUltrassom::getDistance() {
      long duration = pulseIn(_echo,HIGH);  
   //Esse calculo é baseado em s = v . t, lembrando que o tempo vem dobrado  
   //porque é o tempo de ida e volta do ultrassom  
-     long distancia = duration /29 / 2 ;  
+     long distancia = duration /29 / 2; 
     return distancia;
 
   // velocidade do Som em 25 graus Celsius é iguaç a  346,3 m/s

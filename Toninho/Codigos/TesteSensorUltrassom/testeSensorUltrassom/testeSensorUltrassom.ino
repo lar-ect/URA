@@ -1,7 +1,7 @@
 #include "SensorUltrassom.h"
 /*
- Coloque numeros dos pinos referentes ao trig
- e echo aqui  \/
+  Coloque numeros dos pinos referentes ao trig
+  e echo aqui  \/
 */
 int trigger = 12;
 int echo = 13;
@@ -10,29 +10,29 @@ int echo = 13;
    entre parênteses dos pinos no meu caso  foram as variaveis
    trigger, echo, que  possuem os valores 12 e 13 respectivamente
 */
-SensorUltrassom teste (trigger,echo);
+SensorUltrassom ultra (trigger, echo);
 
 void setup() {
 
   /*
-       A variavel do Tipo SensorUltrassom tem uma função como .debug()
-       no meu caso fica teste.debug();
-       essa função só funciona com a Comunicação pelo cabo Usb
-       ligado ou também conhecida como Comunicação Sereal
+       essa função serve para iniciar  a comunicação pelo USB,
+       também conhecida como comunicação serial
   */
-
- //essa é a função que começa comunicação sereal
-   Serial.begin(9600);
   
+ 
+  Serial.begin(9600);  // begin em portugues significa começar
+
 
 }
 
 void loop() {
 
-  teste.debug();
+  Serial.print("Utrassom: ");
+  Serial.print( ultra.getDistance() );
+  Serial.println(" cm");
   /*
- * essa função exibe em centímentros a distancia no monitor serial  entre o sensor 
- * e o primeiro obstaculo que tem pela frente,
- */
+    essa função exibe em centímentros a distancia no monitor serial  entre o sensor
+    e o primeiro obstaculo que tem pela frente,
+  */
 
 }
