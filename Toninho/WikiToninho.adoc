@@ -14,7 +14,7 @@ Esse Tutorial está dividido em 3 partes: Conexão jumper arduino, Conexão jump
 
 image::https://lh3.googleusercontent.com/_HtXjmxJ4UMhy3qgbVEdZVL_pkzX8djeV831x6cfwFdZMSoeo2GtiLPHC-QELS9pIzSe1rnAcdU9AFKCuVXJYW8C-Ngz5aFr_PMbd14oLSDe2ZoAj-U4btPQGW6WOJG14XbS0zmsVeWHnl1UMqWVCPgE4WsCuwTYVpvl8adj2HYzV8mpnwp8w9DO3vsCPSH76Sn1HjR5yki_rwbGgJ4DS_FZ7rlGV1YbzSvzPsOMWSeVrIeIKv99vvj23hCzsmlvcfRFRY4GPWrDlrVJ-6rWuWByg6NzuS7b6wt7LXdVWD5_tu0nj4nmITQg0nIaypjw5zM581ZXkzs6l1qu37KYUsmDMY6kKRaX_53mCB57ME_W2l_tNyILpkHmAswhnHFB0A_qnjjNmbbHmq0q20jzzU2NMf7OKQqnGUU8K-GAZqoFqk7Vhh6vWeiXGR4wgZGNu0oBTcbDJ-sp-hK_u5QcsT3c-ENmiRYO69jQjWhM80X7voAdP1JSII2Jtk243XuUF9n1whivrvI3zSWA3QKki8zKPNvfFiuE9hGcZpPxMBSlnM0qUpwKUWP-DrRqdKldfIgV7VHGHM06iQoJwhtIpdeJ2_PZnx9oqQukAeoF4gNknXCqFKhSf9r0ktg585HizmVGnC9wEWoxuCiuN38t8suXHi1enL_TSMzj=w486-h647-no[Foto1,align="center"]
 
-image::https://raw.githubusercontent.com/lar-ect/URA/FCT/Toninho/Fotos/TuTorial_SensorLinha/JumperSensorLinha_zoom.jpg[Foto2,align="center"]
+image::https://raw.githubusercontent.com/lar-ect/URA/FCT/Toninho/Fotos/TuTorial_SensorLinha/Jumper_Arduino_zoom.jpg[Foto2,align="center"]
 
 * **Um jumper conectado a uma porta analogica simbolizado no arduino pela letra** _A_. +
 No meu caso eu utilizei a porta _A1_ do meu arduino e o fio azul. +
