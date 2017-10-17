@@ -1,4 +1,6 @@
 
+:source-highlighter: pygments
+
 == Introdução
 Esse tutorial ensina como utilizar o sensor o infravermelho, +
 conhecido também conhecido como sensor de linha. +
