@@ -1,3 +1,5 @@
+module suporteGTF () {
+
 raioMaior = 14;
 raioMenor = 3.5; 
 altura = 2; 
@@ -35,7 +37,8 @@ base();
 furosBase();
 
 }
-//
- //base(); 
- //cylinder(altura+1,raioMenor,raioMenor,true); 
-//}
+
+}
+
+projection(cut = false) suporteGTF(); 
+
