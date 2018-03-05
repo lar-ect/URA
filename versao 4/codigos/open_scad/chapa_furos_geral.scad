@@ -11,7 +11,7 @@ module chapaSG (qtX,qtY)  {
 
     module base(){
      
-     translate([-comprimento,0,0]) {
+     
       hull(){
        translate([raioMaior,raioMaior])cylinder(r=raioMaior,h=zdim);
        translate([comprimento-raioMaior,raioMaior,0])cylinder(r=raioMaior,h=zdim);
@@ -19,12 +19,12 @@ module chapaSG (qtX,qtY)  {
        translate([comprimento-raioMaior,largura-raioMaior,0])cylinder(r=raioMaior,h=zdim);
       }
      }  
-    }
+
 
     module furosBase() {
      for(sY = [raioMaior:distFuros:distFuros*qtY])
       for (sX = [raioMaior:distFuros:distFuros*qtX]){
-        translate([-sX,sY,0])
+        translate([sX,sY,0])
         cylinder(altura+1,raioMenor,raioMenor,true);   
       } 
     }
@@ -36,6 +36,6 @@ module chapaSG (qtX,qtY)  {
 
 }
 
-//chapaSG(3,4); 
+chapaSG(7,1); 
 
-projection(cut = false)  chapaSG(7,4); 
+//projection(cut = false)  chapaSG(7,7); 
