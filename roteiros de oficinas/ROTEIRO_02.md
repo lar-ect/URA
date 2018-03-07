@@ -5,9 +5,9 @@
 # Objetivos
 
 * Apresentar os conceitos de Tensão, Corrente e Resistência;
-...1. Associação de resistores em paralelo e em série.
-...2. Utilização de resistores como divisores de tensão.
-...3. Resistores Variáveis.
+1. Associação de resistores em paralelo e em série.
+2. Utilização de resistores como divisores de tensão.
+3. Resistores Variáveis.
 * Fixar os assuntos vistos na aula através de exercícios.
 
 # Lista de Componentes
