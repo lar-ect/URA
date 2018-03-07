@@ -28,4 +28,4 @@
 * URA_PROTOBOARD_LIGACAO.png
 
 # Exercícios
-Apresentar exercício a serem realizados em laboratório e em casa
+Apresentar exercício a serem realizados em laboratório e em cas
