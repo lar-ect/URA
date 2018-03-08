@@ -44,7 +44,7 @@ translate([0,-distanciaCentroFuro,0])
 
  translate([0,0,  altura/2])
  rotate([90,0,0])
- cylinder($fn=20, comprimento+1,1,1,true);
+ cylinder($fn=20, comprimento+1,1.2,1.2,true);
 
 }
 
