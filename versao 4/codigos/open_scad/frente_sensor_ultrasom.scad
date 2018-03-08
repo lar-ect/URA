@@ -1,6 +1,6 @@
 largura = 25;
 comprimento = 52; 
-altura = 10; 
+altura = 11; 
 paredeGrossa = 3; 
 paredeFina = 2; 
 
@@ -34,8 +34,8 @@ module furos() {
 
 
 // profundidade inferior
-raioB = 9;   
-distanciaCentroFuro = 12; 
+raioB = 10;   
+distanciaCentroFuro = 13; 
 translate([0,distanciaCentroFuro,0])
  cylinder($fn=20, comprimento+1,raioB,raioB,true);
 
