@@ -64,12 +64,18 @@ através desse LED.</h3>
 <h3>08- Considere o resistor apresentada abaixo. Baseando-se nas cores das faixas,
 determine o valor de sua resistência elétrica, bem como a sua tolerência.</h3>
 
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_FIG_01_LISTA_02.PNG" width="350" height="200" alt="Figura 01"/>
+
 <h3>09- Determine o valor da resistência elétrica do resistor apresentado abaixo,
-bem como o valor de sus tolerância.</h3>
+bem como o valor de sua tolerância.</h3>
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_FIG_02_LISTA_02.PNG" width="200" height="200" alt="Figura 01"/>
 
 <h3>10- Abaixo, temos dois resistores ligados em série entre si e ligados aos
 potenciais elétricos +8,0V em A e 0,0V em B (GND). Entre eles, temos um terceiro
 ponto que chamamos de M.</h3>
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_FIG_03_LISTA_02.PNG" width="600" height="200" alt="Figura 01"/>
 
 A) Determine o valor da resistência elétrica nominal de cada um dos
 resistores. </br>
