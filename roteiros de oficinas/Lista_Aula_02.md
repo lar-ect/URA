@@ -38,8 +38,7 @@ será a corrente elétrica através desse resistor, quando a porta digital 13, n
 qual está ligado um dos terminais do resistor, estiver configurada para o estado
 “HIGH” (alto)?</h3>
 
-#### Lembre-se, as portas digitais do Arduino só podem fornecer um potencial elétrico
-de 0V ou 5V.
+#### Lembre-se, as portas digitais do Arduino só podem fornecer um potencial elétrico de 0V ou 5V.
 
 <h3>05- Imagine que você está usando um LED comum em um de seus protótipos.
 Verificando a tabela de informações sobre esse produto (Datasheet), encontrou a
