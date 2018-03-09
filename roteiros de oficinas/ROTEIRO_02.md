@@ -42,4 +42,5 @@
 * URA_PROTOBOARD_LIGACAO.png
 
 # Exercícios
-Apresentar exercício a serem realizados em laboratório e em cas
+
+[Link para lista da aula 02](https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/Lista_Aula_02.md "let's aprender")
