@@ -21,11 +21,29 @@ Listagem de componentes necessário para a execução da oficina
 - Leds;
 
 # Montagem Eletrônica
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_ARDUINO_DOWNLOAD_01.PNG" width="1000" height="600" alt="Download parte 01"/>
+
 - URA_ARDUINO_DOWNLOAD_01.png
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_ARDUINO_DOWNLOAD_02.PNG" width="1000" height="600" alt="Download parte 02"/>
+
 - URA_ARDUINO_DOWNLOAD_02.png
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_ARDUINO_IDE.PNG" width="400" height="500" alt="Arduino IDE"/>
+
 - URA_ARDUINO_IDE.png
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_LIGACAO_LED_SIMPLES.PNG" width="400" height="500" alt="Ligando LED 01"/>
+
 - URA_LIGACAO_LED_SIMPLES.png
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_LIGACAO_LED_SERIE.PNG" width="400" height="500" alt="Ligando LED 02"/>
+
 - URA_LIGACAO_LED_SERIE.png
+
+<img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/URA_LIGACAO_LED_PARALELO.PNG" width="400" height="500" alt="Ligando LED 03"/>
+
 - URA_LIGACAO_LED_PARALELO.png
 
 
