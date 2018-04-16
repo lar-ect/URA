@@ -1,11 +1,12 @@
 #include "ServoMotor.h" 
 
-ServoMotor::ServoMotor(int pinEsq, int pinDir){
-    pinDireita = pinDir;
-    pinEsquerda = pinEsq;
+
+
+ServoMotor::ServoMotor(){
+ 
 }
 
-void ServoMotor::setup(){
+void ServoMotor::setup(int pinEsquerda,int pinDireita){
     paradoDireito = 1500; 
     paradoEsquerdo = 1500;
     intensidade = 200; 

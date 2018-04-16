@@ -6,21 +6,24 @@
  class ServoMotor 
  {
      public: 
-        ServoMotor(int pinEsq, int pinDir);
-        void setup(); 
-        void frente(); 
+       
+        ServoMotor();
+        void setup(int pinEsq, int pinDir); 
+        void frente();  
         void viraDireita(); 
         void viraEsquerda(); 
         void re(); 
         void parado();
         void calibra(int pEsq, int pDir);
 
+      
+        
     private: 
-        int pinEsquerda; 
-        int pinDireita;
+ 
         int paradoDireito; 
         int paradoEsquerdo;
-        int intensidade;  
+        int intensidade; 
+       
         
         Servo mEsquerdo;
         Servo mDireito; 

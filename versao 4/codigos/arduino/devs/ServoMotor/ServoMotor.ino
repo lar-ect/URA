@@ -1,19 +1,20 @@
 
 #include "ServoMotor.h" 
 
-ServoMotor sv(5,4);
+// motor esquerdo e direito 
+ServoMotor sm;
 
 void setup() {
-  sv.setup();
-  sv.calibra(1640,1470); 
+  sm.setup(5,4);
+  sm.calibra(1635,1470);
   
 
 }
 
 void loop() {
-  //sv.frente(); 
-  //sv.re();
-  sv.parado();
-  //sv.viraDireita();
-  //sv.viraEsquerda();
+  //sm.frente(); 
+  //sm.re();
+  //sm.parado();
+  //sm.viraDireita();
+  //sm.viraEsquerda();
 }
