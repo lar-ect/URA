@@ -12,6 +12,15 @@ long ControleMovimento::distanciaParaPicos(double dist) {
   
 }
 
+double ControleMovimento::picosParaDistancia(long picos){
+  // (dist / distRoda) = ( picos / qtFendas)
+  return  picos/(qtFendas*distRoda);
+}
+
+double ControleMovimento::calculaVelocidadeRE(){
+  
+}
+
 void ControleMovimento::setup(int pinEMotor, int pinDMotor, int pinESensor, int pinDSensor){
   contaGE.setup(pinESensor,200);
   contaGD.setup(pinDSensor,600);
@@ -19,6 +28,16 @@ void ControleMovimento::setup(int pinEMotor, int pinDMotor, int pinESensor, int 
   mDireito.attach(pinDMotor); 
   pararMDireito = 1470; 
   pararMEsquerdo = 1620;  
+ 
+} 
+
+void ControleMovimento::setup(int pinEMotor, int pinDMotor, int pinESensor, int pinDSensor, int pwmEsq, int pwmDir){
+  contaGE.setup(pinESensor,200);
+  contaGD.setup(pinDSensor,600);
+  mEsquerdo.attach(pinEMotor); 
+  mDireito.attach(pinDMotor); 
+  pararMDireito = pwmDir; 
+  pararMEsquerdo = pwmEsq;  
 
   Serial.begin(9600); 
 } 
@@ -39,12 +58,13 @@ void ControleMovimento::percorreDistancia(double dist){
 }
 
 void ControleMovimento::giraAte(unsigned long cont){
-  if ( contaGD.contaAte(cont)) {
-    moveMotores(0,100); 
+  if ( contaGE.contaAte(cont)) {
+    moveMotores(100,100); 
   }
   else {
     moveMotores(0,0); 
   }
+  Serial.println(contaGE.velocidadeRoda()); 
 
 }
 

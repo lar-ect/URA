@@ -4,7 +4,7 @@ MoveRobo mv;
 
 void setup() {
   
-  mv.setup(5,4); 
+  mv.setup(5,4,1610,1460); 
 }
 
 void loop() {

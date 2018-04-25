@@ -14,6 +14,7 @@
      public: 
         MoveRobo();
         void setup(int pinE, int pinD); 
+        void setup(int pinE, int pinD, int tempEsq, int tempDir); 
 
 
         void comandoTempo(int cmd, unsigned long t);

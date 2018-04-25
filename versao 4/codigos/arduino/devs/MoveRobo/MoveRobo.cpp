@@ -11,6 +11,13 @@ void MoveRobo::setup(int pinE, int pinD){
   temComandoAtivo = false; 
 } 
 
+void MoveRobo::setup(int pinE, int pinD, int tempEsq, int tempDir){
+  sm.setup(5,4);
+  sm.calibra(tempEsq,tempDir); 
+  proximoComando = true; 
+  temComandoAtivo = false; 
+} 
+
 void MoveRobo::executeComando(int comando){
     if (comando == CMD_FRENTE) {
       sm.frente(); 

@@ -15,6 +15,7 @@
         void atualiza(); 
         int getContador(); 
         void zeraContador(); 
+        unsigned long  velocidadeRoda(); 
         bool contaAte(unsigned long cont); 
         
     private: 
@@ -23,6 +24,11 @@
         bool pulsoAnterior; 
         int pin; 
         int limiar; 
+        // tempo 
+        unsigned long deltaTempo;
+        unsigned long ultimoTempo; 
+        unsigned long ultimoContadorPicos; 
+        unsigned long deltaContadorPicos;  
 
  };
 

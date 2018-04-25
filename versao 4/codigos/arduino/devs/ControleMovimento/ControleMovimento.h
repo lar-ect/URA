@@ -3,6 +3,7 @@
 
 #include "ContaGiros.h"
 #include <Servo.h>
+
  
 
 #define SENSOR_ESQUERDO 1
@@ -15,9 +16,13 @@
      public: 
         ControleMovimento();
         void setup(int pinEMotor, int pinDMotor, int pinESensor, int pinDSensor);  
+        void setup(int pinEMotor, int pinDMotor, int pinESensor, int pinDSensor, int pwmEsq, int pwmDir); 
         void giraAte( unsigned long cont);
         void percorreDistancia(double dist); 
         void atualizaSensores(); 
+        double calculaVelocidadeRE();
+        double calculaVelocidadeRD(); 
+        
         void moveMotores(int pulsoEsq, int pulsoDir); 
  
         
@@ -35,7 +40,8 @@
         //Quantidade de fendas no disco 
         int qtFendas; 
         
-        long distanciaParaPicos(double dist); 
+        long distanciaParaPicos(double dist);
+        double picosParaDistancia(long picos);  
 
         /*
         // atributos para tratar o tempo de execução de um comando  
