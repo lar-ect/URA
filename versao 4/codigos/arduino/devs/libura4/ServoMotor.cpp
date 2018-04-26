@@ -16,6 +16,17 @@ void ServoMotor::setup(int pinEsquerda,int pinDireita){
 
 } 
 
+void ServoMotor::incrementaVelocidade(int delta) {
+  intensidade = intensidade + delta; 
+  if (intensidade > 400 ) {
+    intensidade = 400; 
+  }
+  else if (intensidade < 0) {
+    intensidade = 0; 
+  }
+  Serial.println(intensidade); 
+}
+
 void ServoMotor::calibra(int pEsq, int pDir){
     paradoDireito = pDir; 
     paradoEsquerdo = pEsq;

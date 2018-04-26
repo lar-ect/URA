@@ -1,3 +1,9 @@
+/*
+ * Baixa o aplicativo de controle remoto para arduino bluetooth 
+ * https://play.google.com/store/apps/details?id=com.giumig.apps.bluetoothserialmonitor 
+ * Configurar com os caracteres utilizados no código 
+ */
+
 #include "ServoMotor.h" 
  
 
@@ -10,7 +16,6 @@ void setup() {
    sm.setup(5,4); 
    sm.calibra(1620,1460); 
    Serial.begin(9600);
-
 }
 
 void loop() {
@@ -44,7 +49,6 @@ void loop() {
     else if (c == 'q') {
       sm.parado(); 
     }
-    
     Serial.println(c); 
   } 
   delay(20); 

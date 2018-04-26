@@ -15,14 +15,15 @@
         void re(); 
         void parado();
         void calibra(int pEsq, int pDir);
+        void incrementaVelocidade(int delta);
 
       
-        
+           int intensidade;      
     private: 
  
         int paradoDireito; 
         int paradoEsquerdo;
-        int intensidade; 
+
        
         
         Servo mEsquerdo;
