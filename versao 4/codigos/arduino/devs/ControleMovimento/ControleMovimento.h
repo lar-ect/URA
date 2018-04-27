@@ -35,13 +35,6 @@
         Servo mDireito; 
         int pararMDireito; 
         int pararMEsquerdo; 
-        //Distância percorida por uma volta completa da roda 
-        double distRoda;
-        //Quantidade de fendas no disco 
-        int qtFendas; 
-        
-        long distanciaParaPicos(double dist);
-        double picosParaDistancia(long picos);  
 
         /*
         // atributos para tratar o tempo de execução de um comando  

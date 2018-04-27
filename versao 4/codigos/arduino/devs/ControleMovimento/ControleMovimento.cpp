@@ -1,21 +1,11 @@
 #include "ControleMovimento.h" 
 
 ControleMovimento::ControleMovimento(){
-  distRoda = 7.4*3.1415; //2*raio*pi em centimetros 
-  qtFendas = 20; 
+
  
 }
 
-long ControleMovimento::distanciaParaPicos(double dist) {
-  // (dist / distRoda) = ( picos / qtFendas)
-  return (dist/distRoda)*qtFendas; 
-  
-}
 
-double ControleMovimento::picosParaDistancia(long picos){
-  // (dist / distRoda) = ( picos / qtFendas)
-  return  picos/(qtFendas*distRoda);
-}
 
 double ControleMovimento::calculaVelocidadeRE(){
   
@@ -48,6 +38,7 @@ void ControleMovimento::moveMotores(int pulsoEsq, int pulsoDir) {
   
 }
 
+/*
 void ControleMovimento::percorreDistancia(double dist){
   if ( contaGD.contaAte(distanciaParaPicos(dist))) {
     moveMotores(0,100); 
@@ -56,6 +47,7 @@ void ControleMovimento::percorreDistancia(double dist){
     moveMotores(0,0); 
   } 
 }
+*/ 
 
 void ControleMovimento::giraAte(unsigned long cont){
   if ( contaGE.contaAte(cont)) {
