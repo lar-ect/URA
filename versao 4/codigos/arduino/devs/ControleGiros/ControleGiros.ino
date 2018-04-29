@@ -8,10 +8,10 @@ ContaGiros cg;
 // variaveis para o controle de velocidade 
 unsigned long parado = 1620; 
 unsigned long ajusteMotor = 30; 
-unsigned long deltaT = 2000; 
+unsigned long deltaT = 1000; 
 unsigned long tempoAnterior = 0; 
 double termoIntegral = 0; 
-double Kp = 1.1; 
+double Kp = 0.9; 
 double Ki = 0.02; 
 
 
@@ -43,7 +43,7 @@ void testePicosPorTempo(){
 }
 
 void testeVelocidadeAtual(){
-  motor.writeMicroseconds(1660);
+  motor.writeMicroseconds(1740);
   // tempo configurado para 1 segundo (1000 ms)
   double vel = cg.getVelocidade(1000); 
   Serial.println(vel); 
@@ -54,7 +54,7 @@ void testeControleVelocidade() {
   unsigned long tempoAtual = millis(); 
   double velocidade =  cg.getVelocidade(deltaT);
   if ( tempoAtual - tempoAnterior > deltaT ) {
-    double erro = 14 - velocidade;
+    double erro = 12 - velocidade;
     termoIntegral += Ki*erro; 
     Serial.println(velocidade);
     ajusteMotor += erro*Kp + termoIntegral; 
