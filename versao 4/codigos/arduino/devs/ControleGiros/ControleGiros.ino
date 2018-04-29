@@ -50,13 +50,16 @@ void testeVelocidadeAtual(){
 }
 
 void testeControleVelocidade() {
+  int velocidadeAlvo = 12; 
   // erro = velocidade desejada - velocidade estimada 
   unsigned long tempoAtual = millis(); 
   double velocidade =  cg.getVelocidade(deltaT);
   if ( tempoAtual - tempoAnterior > deltaT ) {
-    double erro = 12 - velocidade;
+    double erro = velocidadeAlvo - velocidade;
     termoIntegral += Ki*erro; 
-    Serial.println(velocidade);
+    Serial.print(velocidade);
+    Serial.print("cm/s "); 
+    Serial.println(ajusteMotor); 
     ajusteMotor += erro*Kp + termoIntegral; 
     tempoAnterior = tempoAtual; 
   }
