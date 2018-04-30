@@ -2,6 +2,8 @@
  * Baixa o aplicativo de controle remoto para arduino bluetooth 
  * https://play.google.com/store/apps/details?id=com.giumig.apps.bluetoothserialmonitor 
  * Configurar com os caracteres utilizados no código 
+ * 
+ * Usar o Tx -> Rx e Rx -> Tx (bluetooth -> Arduíno) 
  */
 
 #include "ServoMotor.h" 
