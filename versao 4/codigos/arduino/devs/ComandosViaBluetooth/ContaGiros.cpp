@@ -67,7 +67,7 @@ void ContaGiros::zeraContador() {
 
 }
 
-bool ContaGiros::contaAte(unsigned long cont){
+bool ContaGiros::contaAte(long cont){
   if( cont <= contadorPicos){
     return false;    
   }

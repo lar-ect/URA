@@ -38,17 +38,23 @@ void ControleMovimento::moveMotores(int pulsoEsq, int pulsoDir) {
 
  
 
-void ControleMovimento::giraAte(unsigned long contE, unsigned long contD){
+void ControleMovimento::giraAte( long contE,  long contD){
   int pE = 0; 
   int pD = 0; 
-  if ( contaGE.contaAte(contE)) {
-    pE = incEsq; 
+  if ( ! contaGE.contaAte(abs(contE))) {
+    if (contE < 0)
+      pE = -incEsq; 
+    else
+      pE = incEsq; 
   }
-  if ( contaGE.contaAte(contD)) {
-    pD = incDir; 
+  if ( ! contaGD.contaAte(abs(contD))) {
+    if (contE < 0)
+      pE = -incDir;
+    else
+      pD = incDir; 
   }
   moveMotores(pE,pD); 
-  Serial.println(contaGE.velocidadeRoda()); 
+  Serial.println(contaGE.getContador()); 
 
 }
 

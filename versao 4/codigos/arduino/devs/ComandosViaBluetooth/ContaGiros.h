@@ -16,7 +16,7 @@
         int getContador(); 
         void zeraContador(); 
         unsigned long  velocidadeRoda(); 
-        bool contaAte(unsigned long cont); 
+        bool contaAte(long cont); 
         
     private: 
         unsigned long contadorPicos; 

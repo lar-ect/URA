@@ -9,7 +9,8 @@
 #include "ControleMovimento.h"
 ControleMovimento cm; 
 
- 
+long passosE = 20;
+long passosD = 20; 
  
 int delta; 
  
@@ -21,6 +22,7 @@ void setup() {
 }
 
 void loop() {
+  cm.atualizaSensores(); 
   if (Serial.available())
   { 
     char c = Serial.read();
@@ -28,22 +30,29 @@ void loop() {
  
     if (c == 'f') {
       // move para frente 
-      cm.moveMotores(100, 100);
+      passosE = 20; 
+      passosD = 20; 
+ 
     }
     else if (c == 'r') {
       // move para trás 
-      cm.moveMotores(-100, -100);  
+      passosE = -20; 
+      passosD = -20; 
     } 
     else if (c == 'd') {
-      cm.moveMotores(0, 100); 
+      passosE = 0; 
+      passosD = 20; 
     }
     else if (c == 'e') {
-      cm.moveMotores(100, 0);    
+      passosE = 20; 
+      passosD = 0;    
     }
     else if (c == 'q') {
-      cm.moveMotores(0, 0);  
+      passosE = 0; 
+      passosD = 0; 
     }
     Serial.println(c); 
   } 
-  delay(20); 
+  cm.giraAte(passosE, passosD); 
+  //delay(20); 
 }

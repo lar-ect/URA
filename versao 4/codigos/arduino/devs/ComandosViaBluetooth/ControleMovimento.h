@@ -17,7 +17,7 @@
         ControleMovimento();
         void setup(int pinEMotor, int pinDMotor, int pinESensor, int pinDSensor);  
         void setup(int pinEMotor, int pinDMotor, int pinESensor, int pinDSensor, int pwmEsq, int pwmDir); 
-        void giraAte(unsigned long contE, unsigned long contD);
+        void giraAte( long contE,  long contD);
         void percorreDistancia(double dist); 
         void atualizaSensores(); 
         double calculaVelocidadeRE();
