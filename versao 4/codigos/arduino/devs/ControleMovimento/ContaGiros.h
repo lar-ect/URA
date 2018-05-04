@@ -30,6 +30,8 @@
         unsigned long ultimoContadorPicos; 
         unsigned long deltaContadorPicos;  
 
+        
+
  };
 
 #endif 
