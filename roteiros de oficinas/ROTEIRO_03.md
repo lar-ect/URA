@@ -9,3 +9,6 @@ Nessa terceira semana de oficinas iremos abordar outro componente eletrônico mu
 Figura 01 - Analogia do funcionamento de um diodo com válvula de água.
 <br/> <br/>
 Para um saber um pouco mais vocês podem clicar no ícone ao lado<a target="_blank" href="https://www.youtube.com/watch?v=rR8WdjZ5tHQ"><img src="https://yt3.ggpht.com/-M8MvLxsBZpI/AAAAAAAAAAI/AAAAAAAAAAA/QIpdfb2jVYw/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="30" height="30" alt="link"/></a>
+</br>Ou seja, o diodo é um elemento que impede a corrente de passar em um sentindo, oferencendo uma resistencia a corrente altíssima, e no outro sentido permite a passagem de corrente depois de uma certa tensão de "ativação", por exemplo para diodos de silício essa tensão é de 0,7 volts.</br>
+Massa tudo isso que vimos até agora, não?! Mas vamos partir para a parte mais importante e que é o tema central dessa oficina: 
+**LED**
