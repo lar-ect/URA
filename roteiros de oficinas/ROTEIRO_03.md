@@ -8,4 +8,4 @@ Nessa terceira semana de oficinas iremos abordar outro componente eletrônico mu
 <img src="http://www.newtoncbraga.com.br/images/stories/almanaque/alm0296_01.png" width="500" height="400" alt="Figura 01"/>
 Figura 01 - Analogia do funcionamento de um diodo com válvula de água.
 <br/> <br/>
-Para um saber um pouco mais vocês podem clicar no ícone ao lado<a href="https://www.youtube.com/watch?v=rR8WdjZ5tHQ"><img src="https://yt3.ggpht.com/-M8MvLxsBZpI/AAAAAAAAAAI/AAAAAAAAAAA/QIpdfb2jVYw/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="30" height="30" alt="link"/></a>
+Para um saber um pouco mais vocês podem clicar no ícone ao lado<a href="https://www.youtube.com/watch?v=rR8WdjZ5tHQ" target="_blank"><img src="https://yt3.ggpht.com/-M8MvLxsBZpI/AAAAAAAAAAI/AAAAAAAAAAA/QIpdfb2jVYw/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg" width="30" height="30" alt="link"/></a>
