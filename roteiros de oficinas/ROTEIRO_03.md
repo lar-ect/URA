@@ -14,3 +14,19 @@ Massa tudo isso que vimos até agora, não?! Mas vamos partir para a parte mais 
 <img src="https://github.com/lar-ect/URA/blob/master/roteiros%20de%20oficinas/LED.png?raw=true" style="padding-left: 100px" width="400" height="400" alt="Figura 02"/>
 Figura 02 - Partes de que compõem um LED.
 
+# Objetivos
+
+* Apresentar os conceitos que envolvem abarcão o componente LED:
+   1. Conceito de diodo;
+   2. Tipos de Diodo;
+   3. Partes de um LED;
+   4. Tipos de LED;
+* Fixar os assuntos vistos na aula através de exercícios.
+
+# Lista de Componentes
+
+* Arduino uno (Utilizado apenas como fonte de tensão 5V);
+* Protoboard;
+* Resistores Variados;
+* Jumpers;
+* LED's;
