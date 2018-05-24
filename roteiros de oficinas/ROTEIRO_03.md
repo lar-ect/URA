@@ -16,7 +16,7 @@ Figura 02 - Partes de que compõem um LED.
 
 # Objetivos
 
-* Apresentar os conceitos que envolvem abarcão o componente LED:
+* Apresentar os conceitos que envolvem o componente LED:
    1. Conceito de diodo;
    2. Tipos de Diodo;
    3. Partes de um LED;
