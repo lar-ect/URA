@@ -5,7 +5,7 @@
  */
 
  
-String command = ""; // Stores response of bluetooth device
+char c = 'x'; // Stores response of bluetooth device
 
 void setup()
 {
@@ -20,7 +20,7 @@ void loop()
   if (Serial.available())
   {
       delay(10);  
-      char c = Serial.read();
+      c = Serial.read();
       if (c == 'f') {
           digitalWrite(13,HIGH);
       }
@@ -29,4 +29,6 @@ void loop()
       }
       
    }
+   delay(1000); 
+   Serial.println(c); 
 }

@@ -17,9 +17,9 @@ MoveRobo mv;
 File myFile;
 
 // trig e echo 
-Ultrassom usf(3,2);  // ultrassom frontal 
+Ultrassom usd(3,2); // ultrassom frontal 
 Ultrassom use(7,6); // ultrassom esquerdo 
-Ultrassom usd(9,8); // ultrassom direito 
+Ultrassom usf(9,8); // ultrassom direito 
 
 int comandoAtual; 
 

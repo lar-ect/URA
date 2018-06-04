@@ -4,9 +4,9 @@
 
 MoveRobo mv; 
  
-Ultrassom usf(3,2);  // ultrassom frontal 
+Ultrassom usd(3,2);  // ultrassom frontal 
 Ultrassom use(7,6); // ultrassom esquerdo 
-Ultrassom usd(9,8); // ultrassom direito 
+Ultrassom usf(9,8); // ultrassom direito 
 
 int comandoAtual; 
 int vSensores[SOM_MAX_F]; 
@@ -44,11 +44,40 @@ void testeRedeSOM(){
   
   char c = som.melhorResposta(vSensores); 
 
+  
+  for( int i; i <3; i++) {
+    Serial.print(vSensores[i]);
+    Serial.print(" "); 
+  }
   Serial.println(c); 
   
   comandoAtual = mv.converteCharParaCmd(c);
-  Serial.println( comandoAtual);
-  mv.comandoTempo(comandoAtual,500);
+  //Serial.println(comandoAtual);
+  mv.comandoTempo(comandoAtual,100);
+  
+}
+
+void teste2RedeSOM(){
+
+  
+  char c = som.melhorResposta(vSensores); 
+
+  
+  for( int i; i <3; i++) {
+    Serial.print(vSensores[i]);
+    Serial.print(" "); 
+  }
+  Serial.println(c); 
+  
+  comandoAtual = mv.converteCharParaCmd(c);
+  //Serial.println(comandoAtual);
+  if ( ! mv.comandoTempo(comandoAtual,100) ) {
+    vSensores[0] = use.dist();
+    vSensores[1] = usf.dist(); 
+    vSensores[2] = usd.dist(); 
+    mv.ativaProximoCMD(); 
+  }
+  
 }
 
 void setup() {
@@ -61,11 +90,12 @@ void setup() {
 }
 
 void loop() {
-  delay(20); 
+  delay(100); 
   //testeFuncaoDistancia(); 
   //testeReposta();  
   //testeMelhorResposta();
-  testeRedeSOM(); 
+  //testeRedeSOM();
+  teste2RedeSOM(); 
 
 
 }

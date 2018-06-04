@@ -17,7 +17,7 @@
         void setup(int pinE, int pinD, int tempEsq, int tempDir); 
 
 
-        void comandoTempo(int cmd, unsigned long t);
+        bool comandoTempo(int cmd, unsigned long t);
         int  converteCharParaCmd(char c);
         void executeComando(int comando); 
         void ativaProximoCMD();

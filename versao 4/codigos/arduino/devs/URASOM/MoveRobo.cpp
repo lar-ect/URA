@@ -63,7 +63,7 @@ void MoveRobo::executeComando(int comando){
 }
 
 
-void MoveRobo::comandoTempo(int cmd, unsigned long tempo){
+bool MoveRobo::comandoTempo(int cmd, unsigned long tempo){
   unsigned long tempoAtual = millis();
   
   if (proximoComando && ! temComandoAtivo ) {
@@ -73,9 +73,10 @@ void MoveRobo::comandoTempo(int cmd, unsigned long tempo){
     executeComando(cmd); 
   } else {
     if ((tempoAtual - ultimoTempo > tempo) && temComandoAtivo ) {
-      sm.parado();  
+      //sm.parado();  
       temComandoAtivo = false; 
     } 
   }
+  return temComandoAtivo; 
 }
 
