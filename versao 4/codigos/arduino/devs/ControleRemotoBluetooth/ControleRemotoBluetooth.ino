@@ -15,8 +15,8 @@ char c;
 
 void setup() {
    delta = 20; 
-   sm.setup(5,4); 
-   sm.calibra(1620,1460); 
+   sm.setup(2,3); 
+   sm.calibra(1470,1460); 
    Serial.begin(9600);
 }
 
