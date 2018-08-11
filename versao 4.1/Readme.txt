@@ -1,1 +1,0 @@
-Atençao, as peças que estão em formato Stl esta em fase de teste.
