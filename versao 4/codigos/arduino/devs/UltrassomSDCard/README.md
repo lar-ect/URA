@@ -1,1 +1,0 @@
-# Utilização do Ultrassom
