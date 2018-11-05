@@ -14,15 +14,19 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 
 ### Versão 1.0 - Papelão Azul
 
-[Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/Vers%C3%A3o%201.0)
+[Acesse aqui.](https://github.com/lar-ect/URA/tree/v1.0)
 
 ### Versão 2.0 - Toninho
 
-[Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/toninho)
+[Acesse aqui.](https://github.com/lar-ect/URA/tree/v2.0)
 
 ### Versão 3.0
 
-[Acesse aqui.](https://github.com/orivaldosantana/ProjetoURA/tree/master/versao_3)
+[Acesse aqui.](https://github.com/lar-ect/URA/tree/v3.0)
+
+### Versão 4.0/4.1
+
+Versão atual e em desenvolvimento.
 
 ### Sugestão de Cronograma de Atividades
 * Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais
@@ -69,4 +73,3 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 * C++ Básico - Luis Antonio, Apostilando.com
 * Apostila de DEV C++
 * C completo e total - Herbert Schildt, 3º edição Revista e Atualizada
-
