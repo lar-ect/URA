@@ -13,6 +13,13 @@ void ServoMotor::setup(int pinEsquerda, int pinDireita)
     mEsquerdo.attach(pinEsq);
 }
 
+void ServoMotor::velocidade(int Vel)
+{
+    if (Vel + paradoDireito > 2000)
+        Vel = 500;
+    intensidade = Vel;
+}
+
 void ServoMotor::calibra(int pEsq, int pDir)
 {
     paradoDireito = pDir;
