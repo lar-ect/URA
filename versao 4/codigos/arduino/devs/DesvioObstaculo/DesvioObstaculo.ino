@@ -3,12 +3,12 @@
 
 ServoMotor sm; 
 // trig e echo 
-Ultrassom us(3,2); 
+Ultrassom us(6,5); 
 
 void setup() {
    us.setup(); 
-   sm.setup(5,4); 
-   sm.calibra(1610,1460); 
+   sm.setup(11,10); 
+   sm.calibra(1470,1470); 
    Serial.begin(9600);
 }
 
@@ -20,6 +20,7 @@ void loop() {
   }
   else {
     sm.viraDireita(); 
+    delay(500); 
   }
-  delay(300); 
+  delay(100); 
 }

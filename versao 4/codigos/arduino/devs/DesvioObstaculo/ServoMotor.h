@@ -22,7 +22,8 @@
  
         int paradoDireito; 
         int paradoEsquerdo;
-        int intensidade; 
+        int intensDir;
+        int intensEsq;  
        
         
         Servo mEsquerdo;
