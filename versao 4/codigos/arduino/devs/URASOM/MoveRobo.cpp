@@ -5,14 +5,14 @@ MoveRobo::MoveRobo(){
 }
 
 void MoveRobo::setup(int pinE, int pinD){
-  sm.setup(5,4);
+  sm.setup(pinE,pinD,400);
   sm.calibra(1635,1470); 
   proximoComando = true; 
   temComandoAtivo = false; 
 } 
 
-void MoveRobo::setup(int pinE, int pinD, int tempEsq, int tempDir){
-  sm.setup(5,4);
+void MoveRobo::setup(int pinE, int pinD, int tempEsq, int tempDir, int intensidade){
+  sm.setup(pinE,pinD,intensidade);
   sm.calibra(tempEsq,tempDir); 
   proximoComando = true; 
   temComandoAtivo = false; 

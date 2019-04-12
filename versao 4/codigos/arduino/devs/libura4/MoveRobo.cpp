@@ -2,45 +2,81 @@
 
 MoveRobo::MoveRobo(){
  
-
 }
 
 void MoveRobo::setup(int pinE, int pinD){
- 
-  sm.setup(5,4);
+  sm.setup(pinE,pinD,400);
   sm.calibra(1635,1470); 
   proximoComando = true; 
   temComandoAtivo = false; 
-   
 } 
 
+void MoveRobo::setup(int pinE, int pinD, int tempEsq, int tempDir, int intensidade){
+  sm.setup(pinE,pinD,intensidade);
+  sm.calibra(tempEsq,tempDir); 
+  proximoComando = true; 
+  temComandoAtivo = false; 
+} 
+
+void MoveRobo::ativaProximoCMD(){
+  proximoComando = true; 
+}
+
+int MoveRobo::converteCharParaCmd(char c){
+  int cmd; 
+  if (c == 'f') {
+    // move para frente 
+    cmd = CMD_FRENTE; 
+  }
+  else if (c == 'r') {
+    // move para trás 
+    cmd = CMD_RE; 
+  } 
+  else if (c == 'd') {
+    cmd = CMD_GIRA_DIREITA;
+  }
+  else if (c == 'e') {
+    cmd = CMD_GIRA_ESQUERDA;  
+  }
+  else if (c == 'q') {
+    cmd = CMD_PARA; 
+  }
+  else {
+    cmd = CMD_PARA; 
+  }
+  return cmd; 
+}
+
 void MoveRobo::executeComando(int comando){
-    if (CMD_FRENTE) {
+    if (comando == CMD_FRENTE) {
       sm.frente(); 
-    } else if (CMD_RE) {
+    } else if (comando == CMD_RE) {
       sm.re(); 
-    } else if (CMD_GIRA_DIREITA) {
+    } else if (comando == CMD_GIRA_DIREITA) {
       sm.viraDireita();
-    } else if (CMD_GIRA_ESQUERDA) {
+    } else if (comando == CMD_GIRA_ESQUERDA) {
       sm.viraEsquerda();
-    } else if (CMD_PARA) {
+    } else if (comando == CMD_PARA) {
       sm.parado();
     }
     
 }
 
 
-void MoveRobo::comandoTempo(int cmd, unsigned long tempo){
+bool MoveRobo::comandoTempo(int cmd, unsigned long tempo){
   unsigned long tempoAtual = millis();
   
-  if (proximoComando) {
-    proximoComando=false; 
+  if (proximoComando && ! temComandoAtivo ) {
+    proximoComando = false; 
+    temComandoAtivo = true; 
     ultimoTempo=millis();
     executeComando(cmd); 
   } else {
-    if (tempoAtual - ultimoTempo > tempo ) {
-      sm.parado();  
+    if ((tempoAtual - ultimoTempo > tempo) && temComandoAtivo ) {
+      //sm.parado();  
+      temComandoAtivo = false; 
     } 
   }
+  return temComandoAtivo; 
 }
 

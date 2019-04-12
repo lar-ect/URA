@@ -14,11 +14,13 @@
      public: 
         MoveRobo();
         void setup(int pinE, int pinD); 
+        void setup(int pinE, int pinD, int tempEsq, int tempDir, int intensidade); 
 
 
-        void comandoTempo(int cmd, unsigned long t);
+        bool comandoTempo(int cmd, unsigned long t);
+        int  converteCharParaCmd(char c);
         void executeComando(int comando); 
-        void reseta();
+        void ativaProximoCMD();
         
     private: 
         ServoMotor sm; 

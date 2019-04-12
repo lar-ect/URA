@@ -9,8 +9,8 @@ ServoMotor::ServoMotor(){
 void ServoMotor::setup(int pinEsquerda,int pinDireita){
     paradoDireito = 1500; 
     paradoEsquerdo = 1500;
-    intensDir = 230;
-    intensEsq = 420;  
+    intensDir = -420;
+    intensEsq = -420;  
     mDireito.attach(pinDireita);
     mEsquerdo.attach(pinEsquerda);  
 

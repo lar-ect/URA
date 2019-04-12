@@ -3,7 +3,7 @@
 Ultrassom::Ultrassom(int t, int e) {
   trigPin = t;
   echoPin = e;
-  timeOut = 6000; // 3000 µs = 50cm // 30000 µs = 5 m
+  timeOut = 4000; // 3000 µs = 50cm // 30000 µs = 5 m
 }
 
 long Ultrassom::tempo() {

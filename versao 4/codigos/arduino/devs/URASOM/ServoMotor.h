@@ -8,7 +8,7 @@
      public: 
        
         ServoMotor();
-        void setup(int pinEsq, int pinDir); 
+        void setup(int pinEsq, int pinDir, int i); 
         void frente();  
         void viraDireita(); 
         void viraEsquerda(); 

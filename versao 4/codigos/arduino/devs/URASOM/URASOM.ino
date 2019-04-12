@@ -4,9 +4,9 @@
 
 MoveRobo mv; 
  
-Ultrassom usd(3,2);  // ultrassom frontal 
-Ultrassom use(7,6); // ultrassom esquerdo 
-Ultrassom usf(9,8); // ultrassom direito 
+Ultrassom usd(3,2);  // ultrassom  
+Ultrassom use(7,6); // ultrassom  
+Ultrassom usf(9,8); // ultrassom frente 
 
 int comandoAtual; 
 int vSensores[SOM_MAX_F]; 
@@ -71,7 +71,7 @@ void teste2RedeSOM(){
   
   comandoAtual = mv.converteCharParaCmd(c);
   //Serial.println(comandoAtual);
-  if ( ! mv.comandoTempo(comandoAtual,100) ) {
+  if ( ! mv.comandoTempo(comandoAtual,50) ) {
     vSensores[0] = use.dist();
     vSensores[1] = usf.dist(); 
     vSensores[2] = usd.dist(); 
@@ -83,19 +83,20 @@ void teste2RedeSOM(){
 void setup() {
   Serial.begin(9600); 
   comandoAtual = CMD_PARA; 
-  mv.setup(5,4,1610,1460); 
+  mv.setup(4,5,1470,1450, -400); 
   usf.setup();
   use.setup();
   usd.setup();
 }
 
 void loop() {
-  delay(100); 
+  //delay(50); 
   //testeFuncaoDistancia(); 
   //testeReposta();  
   //testeMelhorResposta();
   //testeRedeSOM();
   teste2RedeSOM(); 
+  //mv.comandoTempo(CMD_FRENTE,1000);
 
 
 }
