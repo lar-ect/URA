@@ -13,11 +13,12 @@ class ServoMotor
     void viraEsquerda();
     void re();
     void parado();
+    void velocidade(int Vel);
     void calibra(int pEsq, int pDir);
 
   private:
-    int paradoDireito = 1500;
-    int paradoEsquerdo = 1500;
+    int paradoDireito ;
+    int paradoEsquerdo;
     int intensidade;
     int pinEsq, pinDir;
 

@@ -12,9 +12,14 @@ void setup() {
 }
 
 void loop() {
-  //sm.frente(); 
-  //sm.re();
-  //sm.parado();
-  //sm.viraDireita();
-  //sm.viraEsquerda();
+  sm.frente();
+  delay(1000);
+  sm.re();
+  delay(1000);
+  sm.parado();
+  delay(1000);
+  sm.viraDireita();
+  delay(1000);
+  sm.viraEsquerda();
+  delay(1000);
 }
