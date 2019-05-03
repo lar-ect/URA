@@ -89,10 +89,12 @@ void setup() {
 //              LOOP
 
 void loop() {
+  // Leitura no canal de comunicaço (Serial) 
   do {
     if (Serial.available())
       c = Serial.read();
   } while (c == 10);
+  // Executa uma função do robô de acordo com o caracter que chegou do canal serial 
   if (c == 'w')
     frente();
   else if (c == 's')
