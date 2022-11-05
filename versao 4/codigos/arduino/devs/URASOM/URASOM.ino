@@ -63,7 +63,7 @@ void teste2RedeSOM(){
   char c = som.melhorResposta(vSensores); 
 
   
-  for( int i; i <3; i++) {
+  for( int i=0; i <3; i++) {
     Serial.print(vSensores[i]);
     Serial.print(" "); 
   }
