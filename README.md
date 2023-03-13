@@ -26,7 +26,9 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 
 ### Versão 4.0/4.1
 
-Versão atual e em desenvolvimento.
+### Versão 8
+
+Versão atual e em desenvolvimento, [ver link](https://github.com/Natalnet/URA3D/blob/master/URA8.md#ura3d).
 
 ### Sugestão de Cronograma de Atividades
 * Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais
