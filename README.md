@@ -24,11 +24,21 @@ As atividades deste projeto estarão organizadas em oficinas temática com o obj
 
 [Acesse aqui.](https://github.com/lar-ect/URA/tree/v3.0)
 
-### Versão 4.0/4.1
+### Versão 4.0 
 
-### Versão 8
+[Acesse aqui.](https://github.com/Natalnet/URA3D/blob/master/URA4.md)
+ 
+### Versão 6.0 
 
-Versão atual e em desenvolvimento, [ver link](https://github.com/Natalnet/URA3D/blob/master/URA8.md#ura3d).
+[Acesse aqui.](https://github.com/Natalnet/URA3D/blob/master/URA6.md)
+
+### Versão 7.0 
+
+[Acesse aqui.](https://github.com/Natalnet/URA3D/blob/master/URA7.md)
+
+### Versão 8.0
+
+[Acesse aqui.](https://github.com/Natalnet/URA3D/blob/master/URA8.md#ura3d).
 
 ### Sugestão de Cronograma de Atividades
 * Inicio das oficinas,Introdução basica (Arduino ,  led e IDE) e noções básicas - explicações gerais
